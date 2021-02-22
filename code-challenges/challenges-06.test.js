@@ -66,6 +66,7 @@ const sortByChildren = (charArray) => {
     }
 
   });
+  return charArray;
 
 };
 
@@ -117,7 +118,7 @@ const updateNumbers = (obj) => {
   // Solution code here...
   let newArray = [];
   for (let property in obj) {
-    newArray.push(property, obj[property])
+    newArray.push(property, obj[property]);
   };
   return newArray;
 };
