@@ -27,13 +27,12 @@ let starWarsPeople = [
 const sortStarWarsCharacters = (starWarsArr) => {
   // Solution code here...
   starWarsArr.sort((a,b) => {
-    if (b.height > a.height) {
-      return b.height-a.height
-
+    if (b.height < a.height) {
+      return b.height-a.height;
     }
-  })
+  });
   return starWarsArr;
-}
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -78,7 +77,7 @@ const howMuchPencil = (str) => {
   for(let i = 0; i <str.length+1 ; i++){
 
     let letter = str.slice(i);
-    result.push(letter)
+    result.push(letter);
   }
   return result;
 };
@@ -144,6 +143,11 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
+  let newList = recipe.ingredients;
+  for (let index = 0; index < newList.length; index++) {
+    let slice = newList[index].slice(newList[index].indexOf(' ',3)+1,newList[index].length);
+    result.push(slice);
+  }
   return result;
 };
 
