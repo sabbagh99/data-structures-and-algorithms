@@ -9,8 +9,8 @@ Write a function named replaceZeros that, given a string, uses Regex to replace 
 const replaceZeros = (string) => {
   // Solution code here...
   const reg = /0/g
-  
-  let newStr = string.replace(reg,'zero')
+
+  let newStr = string.replace(reg, 'zero')
   return newStr;
 
 };
@@ -23,10 +23,10 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 
 const addOne = (arr) => {
   // Solution code here...
-  let newArray = arr.map(value=>{
-    return value+1;
+  let newArray = arr.map(value => {
+    return value + 1;
   });
-return newArray;
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -37,10 +37,10 @@ Write a function named addQuestion that, given an array of strings, uses map to 
 
 const addQuestion = (arr) => {
   // Solution code here...
-  let newArray = arr.map(value=>{
-    return (value+'?');
+  let newArray = arr.map(value => {
+    return (value + '?');
   });
-return newArray;
+  return newArray;
 
 }
 
@@ -58,13 +58,12 @@ const forLoopTwoToThe = (arr) => {
   // Solution code here...
   let newArray = [];
   for (let index = 0; index < arr.length; index++) {
-     let newValue = Math.pow(( 2 , arr[index]));
-     newArray.push(newValue);
+    let power = Math.pow(2, arr[index]);
+    newArray.push(power);
 
   }
   return newArray;
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -73,7 +72,12 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   // Solution code here...
-
+  let newArray = [];
+  arr.forEach(element => {
+    let power = Math.pow(2, element);
+    newArray.push(power);
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,9 +88,12 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 
 const mapTwoToThe = (arr) => {
   // Solution code here...
-  // arr.map(value=>{
-  //   return value ^ 2;
-  // })
+  let newArray=[];
+  arr.map(value=>{
+    let power = Math.pow(2,value);
+    newArray.push(power);
+  })
+  return newArray
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -274,29 +281,29 @@ describe('Testing challenge 6', () => {
 
 xdescribe('Testing challenge 7', () => {
   test('It should return an array containing the character code for each letter', () => {
-    expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1'])).toStrictEqual([ 67, 111, 100, 101, 51, 48, 49 ]);
+    expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1'])).toStrictEqual([67, 111, 100, 101, 51, 48, 49]);
     expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1']).length).toStrictEqual(7);
   });
 });
 
 xdescribe('Testing challenge 8', () => {
   test('It should return an array containing the keys from an object', () => {
-    expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541])).toStrictEqual([ 'odd', 'even', 'even', 'even', 'odd', 'odd', 'even', 'odd' ]);
+    expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541])).toStrictEqual(['odd', 'even', 'even', 'even', 'odd', 'odd', 'even', 'odd']);
     expect(evenOdd([5, 8, 2, 6, 9, 13, 542, 541]).length).toStrictEqual(8);
   });
 
   test('It should work with all odd numbers', () => {
-    expect(evenOdd([1, 3, 5, 7, 9])).toStrictEqual([ 'odd', 'odd', 'odd', 'odd', 'odd' ]);
+    expect(evenOdd([1, 3, 5, 7, 9])).toStrictEqual(['odd', 'odd', 'odd', 'odd', 'odd']);
     expect(evenOdd([1, 3, 5, 7, 9]).length).toStrictEqual(5);
   });
 
   test('It should work with all even numbers', () => {
-    expect(evenOdd([2, 4, 6, 8, 10])).toStrictEqual([ 'even', 'even', 'even', 'even', 'even' ]);
+    expect(evenOdd([2, 4, 6, 8, 10])).toStrictEqual(['even', 'even', 'even', 'even', 'even']);
     expect(evenOdd([2, 4, 6, 8, 10]).length).toStrictEqual(5);
   });
 
   test('It should return the string "N/A" if a non-number is included in the array', () => {
-    expect(evenOdd([5, 8, 2, 'hi'])).toStrictEqual([ 'odd', 'even', 'even', 'N/A' ]);
+    expect(evenOdd([5, 8, 2, 'hi'])).toStrictEqual(['odd', 'even', 'even', 'N/A']);
     expect(evenOdd([5, 8, 2, 'hi']).length).toStrictEqual(4);
   });
 });
