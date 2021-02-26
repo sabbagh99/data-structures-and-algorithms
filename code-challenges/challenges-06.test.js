@@ -95,7 +95,10 @@ Write a function named checkValues that takes in an object and a value and retur
 const checkValues = (obj, value) => {
   // Solution code here...
 
-  return Object.keys(obj, value);
+  let resoult = Object.values(obj).includes(value);
+  return resoult;
+ 
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,7 +121,7 @@ const updateNumbers = (obj) => {
   // Solution code here...
   let newArray = [];
   for (let property in obj) {
-    newArray.push(property +': '+ obj[property])
+    newArray.push(property + ': ' + obj[property])
   };
   return newArray;
 };
@@ -152,7 +155,7 @@ hasChildrenValues(characters, 'Sansa') will return false
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
   let chr = Object.values(character);
-  
+
 
 };
 
