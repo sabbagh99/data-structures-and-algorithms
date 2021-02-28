@@ -45,22 +45,17 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 
 const count = (target, input) => {
   // Solution code here...
-  // console.log(input);
-  // console.log(target);
-  //  inArr.forEach(vel={
-  //    vel.filter((v) => (v === int)).length;
-  // let newA = input.forEach(inArr => {
-  //   inArr.forEach(vel => {
-  //     vel.filter(v => {
-  //       return (v === target).length;
-  //     });
-
-  //   });
-
-
-  // });
-  // return newA;
-
+  let rep = 0;
+  input.filter(val => {
+    val.reduce((acc, ele, idx) => {
+      if (ele === target) {
+        acc.push(ele);
+        rep++;
+      }
+      return acc;
+    }, []);
+  });
+  return rep;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -80,7 +75,7 @@ const totalSum = (input) => {
     eachArr.forEach(val => {
       total += val;
     });
-    
+
   });
   return total;
 };
@@ -99,6 +94,7 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
+
 
 
 };
@@ -167,6 +163,7 @@ let starWarsData = [{
 
 let findMaleAndFemale = (data) => {
   // Solution code here...
+  
 
 };
 
@@ -178,6 +175,13 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   // Solution code here...
+  data.sort((a, b) => {
+    let height = a['height'] - b['height'];
+    return height;
+
+  });
+  return data[0].name;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
