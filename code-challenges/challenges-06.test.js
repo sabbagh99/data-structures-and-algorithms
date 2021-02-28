@@ -95,8 +95,9 @@ Write a function named checkValues that takes in an object and a value and retur
 const checkValues = (obj, value) => {
   // Solution code here...
 
-  let resoult = Object.values(obj).includes(value);
-  return resoult;
+  let objOne = Object.values(obj);
+  let objTwo = objOne.includes(value);
+  return objTwo ;
  
 
 };
