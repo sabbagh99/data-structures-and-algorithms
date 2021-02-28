@@ -97,8 +97,8 @@ const checkValues = (obj, value) => {
 
   let objOne = Object.values(obj);
   let objTwo = objOne.includes(value);
-  return objTwo ;
- 
+  return objTwo;
+
 
 };
 
@@ -155,9 +155,14 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-  let chr = Object.values(character);
-
-
+  let child = false;
+  arr.forEach(val => {
+    Object.values(val).forEach(valTwo => {
+      if (valTwo === character)
+        child = true;
+    });
+  });
+  return child;
 };
 
 /* ------------------------------------------------------------------------------------------------
