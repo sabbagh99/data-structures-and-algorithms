@@ -10,9 +10,14 @@ E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
   // Solution code here...
-  arr.reduce((acc,val,idx)=>{
-    return acc+5;
-});
+  let newMax = arr.reduce((acc, val) => {
+    if (val > acc) {
+      acc = val;
+    }
+    return acc;
+  });
+  return newMax;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -30,6 +35,19 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
+  for (let index = 0; index < matrix.length - 1; index++) {
+
+    for (let i = 0; i < matrix[index].length-1; i++) {
+      let maxNum = matrix[0][0];
+      if (matrix[index][i] > maxNum) {
+        maxNum = matrix[index][i];
+        return maxNum;
+      }
+
+    }
+
+  }
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -48,6 +66,16 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...
+  let sum = 0;
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      let val = matrix[i][j];
+      sum += val;
+
+    }
+    
+  }
+  return sum;
 };
 
 
@@ -230,13 +258,13 @@ describe('Testing challenge 1', () => {
 
 describe('Testing challenge 2', () => {
   test('It should return the max value', () => {
-    expect(findMax([[13,24,24,2], [2,5,6], [2,3]])).toStrictEqual(24);
+    expect(findMax([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(24);
   });
 });
 
 describe('Testing challenge 3', () => {
   test('It should return the total sum', () => {
-    expect(totalSum([[13,24,24,2], [2,5,6], [2,3]])).toStrictEqual(81);
+    expect(totalSum([[13, 24, 24, 2], [2, 5, 6], [2, 3]])).toStrictEqual(81);
     expect(totalSum([])).toStrictEqual(0);
   });
 });
