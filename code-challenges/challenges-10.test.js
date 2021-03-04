@@ -169,6 +169,7 @@ let starWarsData = [{
   gender: 'female'
 }];
 
+
 let findMaleAndFemale = (data) => {
   // Solution code here...
   let newArr = [];
