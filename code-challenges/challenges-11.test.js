@@ -60,6 +60,7 @@ const hasNumber = (string) => {
   // Solution code here...
   let regex =/^[A-z]+[0-9]/g;
   return regex.test(string);
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
