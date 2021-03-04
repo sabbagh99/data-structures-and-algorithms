@@ -11,7 +11,7 @@ const longestString = (arr) => {
   let lonStr = arr.reduce((a, b) => {
     if (a.length > b.length) {
       return a;
-    }else {
+    } else {
       return b;
     }
 
@@ -64,7 +64,7 @@ For example, (123) 456-7890 returns 1234567890
 
 const standardizePhoneNumbers = (arr) => {
   // Solution code here...
-  
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -77,6 +77,14 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   // Solution code here...
+  let newStr = '';
+  for (let index = 0; index < str.length; index++) {
+    if (index % 2 !== 0) {
+      let newStrTwo = str.charAt(index);
+      newStr += newStrTwo;
+    }
+  }
+  return newStr;
 };
 
 /* ------------------------------------------------------------------------------------------------
