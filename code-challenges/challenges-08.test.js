@@ -52,13 +52,10 @@ For example, oddValues([1,2,3]) returns [1,3].
 
 const oddValues = (arr) => {
   // Solution code here...
-//   let filter = arr.filter(num=>{
-//     if(num % 2 !==0){
-//       return 1;
-//     }
-    
-//   })
-// return filtir;
+  let filter = arr.filter(num=>{
+    return (num % 2);
+  })
+return filter;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -74,8 +71,10 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 const filterStringsWithVowels = (arr) => {
   // Solution code here...
-  // let answer = [];
-  // let regex = /[a,e,i,o,u]/g;
+  let answer = [];
+  let regex = /[a,e,i,o,u]/i;
+  answer =arr.filter(value=>regex.test(value));
+  return answer;
 };
 
 
@@ -89,6 +88,12 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+  let ans = arr.filter(val=>{
+    if (!forbiddenValues.includes(val)){
+      return val;
+    }
+  });
+  return ans;
 };
 
 /* ------------------------------------------------------------------------------------------------
