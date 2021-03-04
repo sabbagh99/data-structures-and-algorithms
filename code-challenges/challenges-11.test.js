@@ -58,8 +58,8 @@ If it does, return true. If not, return false.
 
 const hasNumber = (string) => {
   // Solution code here...
-  // let regex =/[C-Zc-k0-]\w*/g;
-  // return regex.test(string);
+  let regex =/^[A-z]+[0-9]/g;
+  return regex.test(string);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,7 +82,6 @@ const validateEmail = (email) => {
   // Solution code here...
   let regex = /^([A-z0-9])*(.){1}([A-z0-9]){1,}@[A-z]*(.com|.net|.org)\b/gm;
   return regex.test(email);
-
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -109,7 +108,6 @@ Return either true or false.
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
   
-
 };
 
 /* ------------------------------------------------------------------------------------------------
