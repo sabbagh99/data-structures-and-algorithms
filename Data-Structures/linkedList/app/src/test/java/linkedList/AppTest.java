@@ -7,8 +7,18 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    @Test public void testInsert (){
+      LinkedList list = new LinkedList();
+      list.insert(6);
+      list.insert(7);
+      list.insert(8);
+      assertEquals("the expected output should be {8}->{7}->{6}->NULL","{8}->{7}->{6}->NULL",list.toString());
+    }
+    @Test public void testIncludes(){
+      LinkedList list = new LinkedList();
+      list.insert(6);
+      list.includes(6);
+      assertEquals("the expected output should be true ",true,list.includes(6));
+      assertEquals("the expected output should be false ",false,list.includes(9));
     }
 }

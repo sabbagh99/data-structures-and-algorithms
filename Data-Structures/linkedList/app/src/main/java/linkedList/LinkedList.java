@@ -3,27 +3,52 @@ package linkedList;
 public class LinkedList {
   public Node head;
 
-
-  public void insert(int value) {
-    Node newNode = new Node(value);
-    head = newNode;
-
+  public String test() {
+    Node testNode = head.next;
+    return " your Nodes is" + testNode;
   }
 
 
-  public boolean includes(int value) {
-    Node current = this.head;
-    while (current != null) {
-      if (value == current.value) {
-        return true;
+
+  public void insert(int value) {
+    try {
+      Node current = head;
+      head = new Node(value);
+      if( current != null){
+        head.next =current;
       }
+
+    }catch (Exception e){
+      System.out.println("problem in insert method");
+    }
+  }
+
+  public boolean includes(int value) {
+    Node current = head;
+    try {
+      while (current != null) {
+        if (value == current.value) {
+          return true;
+        }
         current = current.next;
+      }
+    } catch (Exception e) {
+      System.out.println("problem in include method");
     }
     return false;
   }
 
-  @Override
   public String toString() {
-    return "{ "+head.value+" } -> { b } -> { c } -> NULL";
+    String string = "";
+    Node current = head;
+    while (current != null) {
+      string += "{" + current.value + "}->";
+      current = current.next;
+    }
+    if (head != null) {
+      string += "NULL";
+    }
+
+    return string;
   }
 }
