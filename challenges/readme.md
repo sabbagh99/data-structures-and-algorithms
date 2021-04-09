@@ -3,8 +3,4 @@
 
 1. [Reverse Array read me](/ArrayReverse/README.md).
 
-2. [Reverse Array read me](/ArrayReverse/README.md).
-
-3. [Reverse Array read me](/ArrayReverse/README.md).
-
-5. [Reverse Array read me](/ArrayReverse/README.md).
+2. [Shift Array read me](/ArrayShift/README.md).
