@@ -10,8 +10,9 @@ public class App {
       list.insert(3);
       list.insert(7);
       list.insert(5);
-      System.out.println(list.includes(3));
-
+      System.out.println(list.includes(8));
       System.out.println(list.toString());
     }
 }
+
+
