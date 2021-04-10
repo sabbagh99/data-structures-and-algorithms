@@ -10,7 +10,7 @@ public class LinkedList {
 
 
 
-  public void insert(int value) {
+  public int insert(int value) {
     try {
       Node current = head;
       head = new Node(value);
@@ -21,6 +21,7 @@ public class LinkedList {
     }catch (Exception e){
       System.out.println("problem in insert method");
     }
+    return head.value;
   }
 
   public boolean includes(int value) {
