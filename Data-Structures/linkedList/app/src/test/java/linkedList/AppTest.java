@@ -13,12 +13,13 @@ public class AppTest {
       list.insert(7);
       list.insert(8);
       assertEquals("the expected output should be {8}->{7}->{6}->NULL","{8}->{7}->{6}->NULL",list.toString());
+      assertEquals("The head should be the the last inserted number which is 5",5,list.insert(5));
     }
     @Test public void testIncludes(){
       LinkedList list = new LinkedList();
       list.insert(6);
       list.includes(6);
-      assertEquals("the expected output should be true ",true,list.includes(6));
-      assertEquals("the expected output should be false ",false,list.includes(9));
+      assertTrue(list.includes(6));
+      assertFalse(list.includes(9));
     }
 }
