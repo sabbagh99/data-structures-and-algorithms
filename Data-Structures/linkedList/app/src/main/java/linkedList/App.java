@@ -8,8 +8,13 @@ public class App {
     public static void main(String[] args) {
       LinkedList list = new LinkedList();
       list.insert(3);
-      list.insert(7);
       list.insert(5);
+      list.append(9);
+      list.append(8);
+      list.insertBefore(3,4);
+      list.insertAfter(9,6);
+
+
       System.out.println(list.includes(8));
       System.out.println(list.toString());
     }

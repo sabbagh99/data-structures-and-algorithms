@@ -21,7 +21,11 @@ public class AppTest {
     int[] oddExpected = {4, 8, 15, 16, 23, 42};
     int[] evenArray = {2,4,6,8};
     int[] evenExpected = {2,4,5,6,8};
+    int[] emptyArr = {};
+    int[] emptyExpected = {7};
     assertEquals("for the odd array length", Arrays.toString(oddExpected), Arrays.toString(classUnderTest.insertShiftArray(oddArray, 16)));
-    assertEquals("for the odd array length", Arrays.toString(evenExpected), Arrays.toString(classUnderTest.insertShiftArray(evenArray, 5)));
+    assertEquals("for the even array length", Arrays.toString(evenExpected), Arrays.toString(classUnderTest.insertShiftArray(evenArray, 5)));
+    assertEquals("for the empty array length", Arrays.toString(emptyExpected), Arrays.toString(classUnderTest.insertShiftArray(emptyArr, 7)));
+
   }
 }
