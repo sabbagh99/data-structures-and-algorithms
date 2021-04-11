@@ -21,5 +21,7 @@ public class ArrayShift {
     return newArr;
   }
   public static void main(String[] args) {
+    int[] s = {};
+insertShiftArray(s,7);
   }
 }
