@@ -13,9 +13,9 @@ public class App {
       list.append(8);
       list.insertBefore(3,4);
       list.insertAfter(9,6);
+      System.out.println(list.kthFromEnd(5));
 
-
-      System.out.println(list.includes(8));
+//      System.out.println(list.includes(8));
       System.out.println(list.toString());
     }
 }
