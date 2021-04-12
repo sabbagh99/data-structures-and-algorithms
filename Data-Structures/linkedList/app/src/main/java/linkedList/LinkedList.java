@@ -1,5 +1,8 @@
 package linkedList;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class LinkedList {
   public Node head;
   public Node last = null;
@@ -32,7 +35,8 @@ public class LinkedList {
     }
     return false;
   }
-//---------------- Linked list part two --------------------------
+
+  //---------------- Linked list part two --------------------------
   public void append(int value) {
     Node newNode = new Node(value);
     if (head == null) {
@@ -46,7 +50,7 @@ public class LinkedList {
     last.next = newNode;
   }
 
-  public void insertBefore(int value ,int newValue) {
+  public void insertBefore(int value, int newValue) {
     Node newNode = new Node(newValue);
     if (head == null) {
       head = new Node(newValue);
@@ -56,12 +60,12 @@ public class LinkedList {
     while (last.next.value != value) {
       last = last.next;
     }
-    newNode.next= last.next;
+    newNode.next = last.next;
     last.next = newNode;
 
   }
 
-  public void insertAfter(int value ,int newValue) {
+  public void insertAfter(int value, int newValue) {
     Node newNode = new Node(newValue);
     if (head == null) {
       head = new Node(newValue);
@@ -73,6 +77,28 @@ public class LinkedList {
     }
     newNode.next = last.next;
     last.next = newNode;
+  }
+
+  public int kthFromEnd(int k) {
+    Node current = head;
+    int kNode = 0;
+    ArrayList<Integer> linkedListArr = new ArrayList<Integer>();
+    while (current != null) {
+      linkedListArr.add(current.value);
+      current = current.next;
+    }
+    System.out.println(linkedListArr);
+    int [] newArr = new int[linkedListArr.size()];
+    int j = 0;
+    for (int i = linkedListArr.size()-1;i>=0;i--){
+      newArr[j]=linkedListArr.get(i);
+      j++;
+    }
+
+for (int i=0;i<newArr.length;i++){
+  kNode = newArr[k];
+}
+    return kNode;
   }
 
   public String toString() {
