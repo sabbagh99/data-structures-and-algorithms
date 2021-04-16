@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
 public class AppTest {
     @Test public void testInsert (){
       LinkedList list = new LinkedList();
+      assertEquals("",list.toString());
       list.insert(6);
       list.insert(7);
       list.insert(8);
