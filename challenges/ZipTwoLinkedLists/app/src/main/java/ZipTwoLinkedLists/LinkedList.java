@@ -1,4 +1,5 @@
 package ZipTwoLinkedLists;
+
 import java.util.ArrayList;
 
 public class LinkedList {

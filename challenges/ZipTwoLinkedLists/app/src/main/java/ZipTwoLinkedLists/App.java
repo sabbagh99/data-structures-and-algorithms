@@ -14,13 +14,7 @@ public class App {
     list2.insertTwo(2);
     list2.insertTwo(2);
     list2.insertTwo(2);
-
-    System.out.println(list);
-    System.out.println(list2);
     System.out.println(list.zipLists(list, list2));
-//
-    System.out.println(list);
-    System.out.println(list2);
   }
 
 }
