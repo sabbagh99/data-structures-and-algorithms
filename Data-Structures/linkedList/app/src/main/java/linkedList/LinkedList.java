@@ -80,6 +80,7 @@ public class LinkedList {
   }
 
   public int kthFromEnd(int k) {
+
     Node current = head;
     int kNode = 0;
     ArrayList<Integer> linkedListArr = new ArrayList<Integer>();
@@ -87,8 +88,9 @@ public class LinkedList {
       linkedListArr.add(current.value);
       current = current.next;
     }
-    System.out.println(linkedListArr);
     int [] newArr = new int[linkedListArr.size()];
+    if (k>newArr.length||k<0)
+      return -1;
     int j = 0;
     for (int i = linkedListArr.size()-1;i>=0;i--){
       newArr[j]=linkedListArr.get(i);

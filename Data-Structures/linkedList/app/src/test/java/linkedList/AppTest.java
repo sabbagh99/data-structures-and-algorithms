@@ -4,79 +4,50 @@
 package linkedList;
 
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testInsert (){
-      LinkedList list = new LinkedList();
-      assertEquals("",list.toString());
-      list.insert(6);
-      list.insert(7);
-      list.insert(8);
-      assertEquals("the expected output should be {8}->{7}->{6}->NULL","{8}->{7}->{6}->NULL",list.toString());
-      assertEquals("The head should be the the last inserted number which is 5",5,list.insert(5));
-    }
-    @Test public void testIncludes(){
-      LinkedList list = new LinkedList();
-      list.insert(6);
-      list.includes(6);
-      assertTrue(list.includes(6));
-      assertFalse(list.includes(9));
-    }
-
-  //---------------------- Linked list part two --------------------------
-
-  @Test public void testAppend(){ // Test for appending one node
-      LinkedList list = new LinkedList();
-      list.insert(6);
-      list.insert(7);
-      list.append(8);
-
-      assertEquals("the expected output should be {7}->{6}->{8}->NULL","{7}->{6}->{8}->NULL",list.toString());
-    }
-  @Test public void testAppendMulti(){ // Test for appending  multiple nodes
+  @Test
+  public void testInsert() {
     LinkedList list = new LinkedList();
-    list.insert(7);
-    list.insert(6);
+    assertEquals("", list.toString());
+    list.insert(2);
+    assertEquals(2, list.kthFromEnd(0)); //Where the linked list is of a size 1
+
+    list.insert(3);
+    assertEquals("{3}->{2}->NULL", list.toString());
+    assertEquals(4, list.insert(4));
+// -------------- testIncludes------------------
+    list.insert(5);
+    list.includes(6);
+    assertTrue(list.includes(5));
+    assertFalse(list.includes(9));
+
+    //------------------------------------------------------------------- Linked list part two --------------------------------------------------------
+
+    list.append(1);
+    assertEquals("{5}->{4}->{3}->{2}->{1}->NULL", list.toString()); //Test for appending one node
     list.append(8);
     list.append(9);
-    list.append(10);
-    assertEquals("the expected output should be {6}->{7}->{8}->{9}->{10}->NULL","{6}->{7}->{8}->{9}->{10}->NULL",list.toString());
-  }
-  @Test public void testInsertBefore(){ // Test for inserting a node before a node located i the middle of a linked list
-    LinkedList list = new LinkedList();
-    list.insert(7);
-    list.insert(6);
-    list.append(9);
-    list.append(10);
-    list.insertBefore(9,8);
-    assertEquals("the expected output should be {6}->{7}->{8}->{9}->{10}->NULL","{6}->{7}->{8}->{9}->{10}->NULL",list.toString());
-  }
-//  @Test public void testInsertBeforeFirst(){ // Test for inserting a node before the first node of a linked list
-//    LinkedList list = new LinkedList();
-//    list.insert(7);
-//    list.insert(6);
-//    list.append(9);
-//    list.append(10);
-//    list.insertBefore(6,5);
-//    assertEquals("the expected output should be {6}->{7}->{8}->{9}->{10}->NULL","{6}->{7}->{8}->{9}->{10}->NULL",list.toString());
-//  }
+    assertEquals("{5}->{4}->{3}->{2}->{1}->{8}->{9}->NULL", list.toString());//Test for appending  multiple nodes
+    list.insertBefore(9, 8);
+    assertEquals("{5}->{4}->{3}->{2}->{1}->{8}->{8}->{9}->NULL", list.toString());//Test for inserting a node before a node located i the middle of a linked list
+////testInsertBeforeFirst()----->Test for inserting a node before the first node of a linked list
+//    list.insertBefore(5,6);
+//    assertEquals("{5}->{4}->{3}->{2}->{1}->{5}->{8}->{8}->{9}->NULL",list.toString());
+    list.insertAfter(1, 7);
+    assertEquals("{5}->{4}->{3}->{2}->{1}->{7}->{8}->{8}->{9}->NULL", list.toString()); //Test for inserting after a node in the middle of the linked list
+    list.insertAfter(9, 10);
+    list.insertAfter(10, 11);
+    assertEquals("{5}->{4}->{3}->{2}->{1}->{7}->{8}->{8}->{9}->{10}->{11}->NULL", list.toString()); //    Test for inserting a node after the last node of the linked list
 
-  @Test public void testInsertAfter(){ // Test for inserting after a node in the middle of the linked list
-    LinkedList list = new LinkedList();
-    list.insert(8);
-    list.insert(6);
-    list.insert(5);
-    list.insertAfter(6,7);
-    assertEquals("the expected output should be {5}->{6}->{7}->{8}->NULL","{5}->{6}->{7}->{8}->NULL",list.toString());
-  }
-  @Test public void testInsertAfterLast(){ // Test for inserting  a node after the last node of the linked list
-    LinkedList list = new LinkedList();
-    list.insert(8);
-    list.insert(6);
-    list.insert(5);
-    list.insertAfter(6,7);
-    list.insertAfter(8,9);
-    assertEquals("the expected output should be {5}->{6}->{7}->{8}->{9}->NULL","{5}->{6}->{7}->{8}->{9}->NULL",list.toString());
+    //------------------------------------------------------------------- Linked list k-th value --------------------------------------------------------
+    assertEquals(-1, list.kthFromEnd(15)); //Where k is greater than the length of the linked list
+    assertEquals(5, list.kthFromEnd(10)); //Where k and the length of the list are the same
+    assertEquals(-1, list.kthFromEnd(-5));//Where k is not a positive integer
+    assertEquals(8, list.kthFromEnd(4)); //“Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+
+
   }
 }
