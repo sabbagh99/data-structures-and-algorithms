@@ -17,4 +17,4 @@
 
 ### Solution
 
-[Whiteboard solution ](../assets/zipTwolinkedlist.jpeg)
+![Whiteboard solution ](../assets/zipTwolinkedlist.jpeg)
