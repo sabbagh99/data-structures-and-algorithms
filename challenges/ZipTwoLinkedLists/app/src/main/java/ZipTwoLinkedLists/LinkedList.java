@@ -1,27 +1,26 @@
 package ZipTwoLinkedLists;
-
 import java.util.ArrayList;
 
 public class LinkedList {
   public Node head;
   public Node last = null;
 
-  public static LinkedList zipLists(LinkedList one, LinkedList2 two) {
+  public static String zipLists(LinkedList one, LinkedList2 two) {
     Node oneCurrent = one.head, twoCurrent = two.newHead;
     Node oneNext, twoNext;
     while (oneCurrent != null && twoCurrent != null) {
-        oneNext = oneCurrent.next;
-        twoNext = twoCurrent.next;
+      oneNext = oneCurrent.next;
+      twoNext = twoCurrent.next;
 
-        twoCurrent.next = oneNext;
-        oneCurrent.next = twoCurrent;
+      twoCurrent.next = oneNext;
+      oneCurrent.next = twoCurrent;
 
-        oneCurrent = oneNext;
-        twoCurrent = twoNext;
+      oneCurrent = oneNext;
+      twoCurrent = twoNext;
 
     }
     two.newHead = twoCurrent;
-    return one;
+    return one.toString();
   }
 
   public int insert(int value) {
@@ -79,7 +78,6 @@ public class LinkedList {
     }
     newNode.next = last.next;
     last.next = newNode;
-
   }
 
   public void insertAfter(int value, int newValue) {
@@ -111,7 +109,6 @@ public class LinkedList {
       newArr[j] = linkedListArr.get(i);
       j++;
     }
-
     for (int i = 0; i < newArr.length; i++) {
       kNode = newArr[k];
     }
@@ -130,8 +127,6 @@ public class LinkedList {
     }
     return string;
   }
-
-
 }
 
 class LinkedList2 {
@@ -144,16 +139,13 @@ class LinkedList2 {
       if (current != null) {
         newHead.next = current;
       }
-
     } catch (Exception e) {
       System.out.println("problem in insert method");
     }
     return newHead.value;
   }
 
-
   public String toString() {
-
     String string2 = "";
     Node current2 = newHead;
     while (current2 != null) {
@@ -164,6 +156,5 @@ class LinkedList2 {
       string2 += "NULL";
     }
     return string2;
-
   }
 }
