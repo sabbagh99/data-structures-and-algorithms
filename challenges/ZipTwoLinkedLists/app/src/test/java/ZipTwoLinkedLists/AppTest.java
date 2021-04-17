@@ -8,7 +8,19 @@ import static org.junit.Assert.*;
 
 public class AppTest {
     @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+      LinkedList list = new LinkedList();
+      LinkedList2 list2 = new LinkedList2();
+      list.insert(1);
+      list.insert(1);
+      list.insert(1);
+      list2.insertTwo(2);
+      list2.insertTwo(2);
+      list2.insertTwo(2);
+assertEquals("{1}->{2}->{1}->{2}->{1}->{2}->NULL",list.zipLists(list, list2));
+      list.insert(1);
+      assertEquals("{1}->{1}->{2}->{1}->{2}->{1}->{2}->NULL",list.zipLists(list, list2));
+
+
     }
+
 }
