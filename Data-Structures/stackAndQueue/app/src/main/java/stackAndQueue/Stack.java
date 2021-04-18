@@ -10,8 +10,6 @@ public class Stack {
     } else {
       newNode.next = top;
       top = newNode;
-
-
     }
   }
 
