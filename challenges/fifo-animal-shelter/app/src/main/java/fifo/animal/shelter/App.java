@@ -6,16 +6,21 @@ package fifo.animal.shelter;
 import utilities.AnimalShelter;
 import utilities.Cat;
 import utilities.Dog;
+import utilities.MultiBracketValidation;
 
 public class App {
 
 
     public static void main(String[] args) {
-      AnimalShelter animal = new AnimalShelter();
-      Dog dog = new Dog("dog");
-      Cat cat = new Cat("cat");
-      animal.enqueue(cat);
-      System.out.println(animal);
-      System.out.println(animal.dequeue());
+      MultiBracketValidation multiBracketValidation = new MultiBracketValidation();
+//      AnimalShelter animal = new AnimalShelter();
+//      Dog dog = new Dog("dog");
+//      Cat cat = new Cat("cat");
+//      animal.enqueue(cat);
+//      System.out.println(animal);
+//      System.out.println(animal.dequeue());
+
+      System.out.println(multiBracketValidation.multiBracketValidation("{(})"));
+
     }
 }
