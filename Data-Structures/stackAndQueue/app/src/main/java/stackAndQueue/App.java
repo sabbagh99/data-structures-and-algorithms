@@ -3,6 +3,7 @@
  */
 package stackAndQueue;
 
+
 public class App {
 
 
@@ -10,17 +11,17 @@ public class App {
     Stack stack = new Stack();
     Queue queue = new Queue();
     PseudoQueue pseudoQueue = new PseudoQueue();
-    stack.push(1);
-    stack.push(2);
-    stack.push(3);
-    System.out.println(stack.toString());
-    System.out.println(pseudoQueue.toString());
+//    stack.push(1);
+//    stack.push(2);
+//    stack.push(3);
+//    System.out.println(stack.toString());
+//    System.out.println(pseudoQueue.toString());
 //
 //    System.out.println(stack.toString());
 //    System.out.println(stack.peek());
 //    System.out.println(stack.isEmpty());
 //    System.out.println(stack.toString());
-
+//================================================
 //    queue.enqueue(1);
 //    queue.enqueue(2);
 //    queue.enqueue(3);
@@ -30,13 +31,14 @@ public class App {
 //    System.out.println(queue.peek());
 //    System.out.println(queue.toString());
 //    System.out.println(queue.isEmpty());
-    pseudoQueue.enqueue(7);
-    pseudoQueue.enqueue(8);
-    pseudoQueue.enqueue(9);
-    System.out.println(stack.toString());
-    System.out.println(pseudoQueue.toString());
-    System.out.println(pseudoQueue.dequeue());
-    System.out.println(pseudoQueue.toString());
+//    =================================
+//    pseudoQueue.enqueue(7);
+//    pseudoQueue.enqueue(8);
+//    pseudoQueue.enqueue(9);
+//    System.out.println(stack.toString());
+//    System.out.println(pseudoQueue.toString());
+//    System.out.println(pseudoQueue.dequeue());
+//    System.out.println(pseudoQueue.toString());
   }
 
 
