@@ -7,14 +7,19 @@ public class App {
 
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
-    LinkedList2 list2 = new LinkedList2();
+    LinkedList list2 = new LinkedList();
     list.insert(1);
     list.insert(1);
     list.insert(1);
-    list2.insertTwo(2);
-    list2.insertTwo(2);
-    list2.insertTwo(2);
-    System.out.println(list.zipLists(list, list2));
+    list.insert(1);
+    list2.insert(2);
+    list2.insert(2);
+    list.insert(1);
+
+    System.out.println(list2.zipLists(list, list2));
+    System.out.println(LinkedList.newLinkedList);
+    LinkedList.newLinkedList.deleteList();
+    System.out.println(LinkedList.newLinkedList);
   }
 
 }
