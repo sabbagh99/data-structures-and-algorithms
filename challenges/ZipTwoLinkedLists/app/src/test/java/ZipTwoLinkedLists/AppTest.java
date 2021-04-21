@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class AppTest {
   @Test
-  public void testAppHasAGreeting() {
+  public void testzipLists() {
     LinkedList list = new LinkedList();
     LinkedList list2 = new LinkedList();
     list.insert(1);
