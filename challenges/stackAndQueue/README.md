@@ -1,4 +1,5 @@
 # Stacks and Queues
+### *code challenge 10*
 ## In this code challenge we  learned how to deal with Stacks and Queues and it's very important to know it.
 ## Challenge
 ## It was required to create tow class  for the stack, queues and for node.
@@ -14,4 +15,14 @@
 * #### `dequeue:`This method to remove Nodes or items  from the queue.
 * #### `peek:`This method will view the value of the front Node in the queue.
 * #### `isEmpty:` This method returns true when queue is empty otherwise returns false.
+
+### *code challenge 11*
+## Challenge Description
+### In this code challenge it was required to Implement a Queue using two Stacks.
+
+## Approach & Efficiency
+### we used the pop and push methods in the stack to deal with enqueue and dequeue the time and space  complexity is  O(1)
+
+## solution
+![whietbord](../assets/queueWithStack.jpeg)
 
