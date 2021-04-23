@@ -42,4 +42,16 @@ public class AppTest {
     assertEquals(-1, queue.peek());//Calling dequeue or peek on empty queue raises exception
     assertEquals(-1, queue.dequeue());//Calling dequeue or peek on empty queue raises exception
   }
+  @Test
+  public void testPseudoQueue(){
+    PseudoQueue pseudoQueue = new PseudoQueue();
+  assertEquals("PseudoQueue{stackOne=, stackTwo=}",pseudoQueue.toString());
+  pseudoQueue.enqueue(3);
+  assertEquals("PseudoQueue{stackOne={3}, stackTwo=}",pseudoQueue.toString());
+    pseudoQueue.enqueue(4);
+    assertEquals("PseudoQueue{stackOne={4}{3}, stackTwo=}",pseudoQueue.toString());
+    pseudoQueue.dequeue();
+    assertEquals("PseudoQueue{stackOne=, stackTwo={4}}",pseudoQueue.toString());
+
+  }
 }

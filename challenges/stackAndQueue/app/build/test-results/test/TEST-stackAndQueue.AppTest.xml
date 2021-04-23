@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="stackAndQueue.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-16T09:49:50" hostname="sabbagh99" time="0.004">
+<testsuite name="stackAndQueue.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-23T09:18:08" hostname="sabbagh99" time="0.002">
   <properties/>
-  <testcase name="testStackAndQueue" classname="stackAndQueue.AppTest" time="0.004"/>
-  <system-out><![CDATA[java.lang.NullPointerException
-java.lang.NullPointerException
-java.lang.NullPointerException
- front is null
-]]></system-out>
+  <testcase name="testPseudoQueue" classname="stackAndQueue.AppTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
