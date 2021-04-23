@@ -3,9 +3,11 @@ package stackAndQueue;
 public class PseudoQueue {
   Stack stackOne = new Stack();
   Stack stackTwo = new Stack();
+
   public void enqueue(int value) {
     stackOne.push(value);
   }
+
   public void dequeue() {
     if (stackTwo.isEmpty())
       while (!stackOne.isEmpty()) {
@@ -13,6 +15,7 @@ public class PseudoQueue {
       }
     stackTwo.pop();
   }
+
   @Override
   public String toString() {
     return "PseudoQueue{" +
