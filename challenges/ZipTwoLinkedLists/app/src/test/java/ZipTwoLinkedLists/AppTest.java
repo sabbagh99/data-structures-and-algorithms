@@ -9,18 +9,22 @@ import static org.junit.Assert.assertEquals;
 
 public class AppTest {
   @Test
-  public void testAppHasAGreeting() {
+  public void testzipLists() {
     LinkedList list = new LinkedList();
-    LinkedList2 list2 = new LinkedList2();
+    LinkedList list2 = new LinkedList();
     list.insert(1);
     list.insert(1);
     list.insert(1);
-    list2.insertTwo(2);
-    list2.insertTwo(2);
-    list2.insertTwo(2);
+    list2.insert(2);
+    list2.insert(2);
+    list2.insert(2);
     assertEquals("{1}->{2}->{1}->{2}->{1}->{2}->NULL", list.zipLists(list, list2));
+    LinkedList.newLinkedList.deleteList();
     list.insert(1);
-    assertEquals("{1}->{1}->{2}->{1}->{2}->{1}->{2}->NULL", list.zipLists(list, list2));
+    assertEquals("{1}->{2}->{1}->{2}->{1}->{2}->{1}->NULL", list.zipLists(list, list2));
+    LinkedList.newLinkedList.deleteList();
+    assertEquals("", LinkedList.newLinkedList.toString());
+
 
 
   }

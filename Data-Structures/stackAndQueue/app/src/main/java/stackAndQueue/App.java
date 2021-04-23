@@ -3,6 +3,7 @@
  */
 package stackAndQueue;
 
+
 public class App {
 
 
@@ -20,7 +21,7 @@ public class App {
 //    System.out.println(stack.peek());
 //    System.out.println(stack.isEmpty());
 //    System.out.println(stack.toString());
-
+//================================================
 //    queue.enqueue(1);
 //    queue.enqueue(2);
 //    queue.enqueue(3);
@@ -30,6 +31,7 @@ public class App {
 //    System.out.println(queue.peek());
 //    System.out.println(queue.toString());
 //    System.out.println(queue.isEmpty());
+<<<<<<< HEAD
     pseudoQueue.enqueue(10);
     pseudoQueue.enqueue(15);
     pseudoQueue.enqueue(20);
@@ -38,6 +40,16 @@ public class App {
     pseudoQueue.enqueue(5);
     System.out.println(pseudoQueue);
 //    System.out.println(pseudoQueue.dequeue());
+=======
+//    =================================
+//    pseudoQueue.enqueue(7);
+//    pseudoQueue.enqueue(8);
+//    pseudoQueue.enqueue(9);
+//    System.out.println(stack.toString());
+//    System.out.println(pseudoQueue.toString());
+//    System.out.println(pseudoQueue.dequeue());
+//    System.out.println(pseudoQueue.toString());
+>>>>>>> 659cea61bf818b69848eb84d1fe44383c11835a7
   }
 
 
