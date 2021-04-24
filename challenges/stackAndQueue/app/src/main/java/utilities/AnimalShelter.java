@@ -1,10 +1,12 @@
-package stackAndQueue;
+package utilities;
 
-public class Queue<T> {
+import stackAndQueue.Node;
+
+public class AnimalShelter<T> {
   Node front;
   Node rear;
 
-  public void enqueue(int value) {
+  public void enqueue(T value) {
     Node newNode = new Node(value);
     if (rear == null) {
       rear = newNode;
@@ -21,24 +23,10 @@ public class Queue<T> {
       return null;
     } else {
       temp = front;
-
       front = temp.next;
       temp.next = null;
     }
     return (T) temp.value;
-  }
-
-  public T peek() {
-    if (front != null)
-      return (T)front.value;
-    return null;
-  }
-
-  public boolean isEmpty() {
-    if (front == null) {
-      return true;
-    }
-    return false;
   }
 
   @Override
@@ -46,9 +34,10 @@ public class Queue<T> {
     Node curr = front;
     String values = "";
     while (curr != null) {
-      values += "{" + curr.value + "}";
+      values +=   curr.value ;
       curr = curr.next;
     }
     return values;
+
   }
 }

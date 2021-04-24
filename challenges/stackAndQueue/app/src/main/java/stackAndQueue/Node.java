@@ -1,8 +1,8 @@
 package stackAndQueue;
 
-public class Node {
-  public int value;
+public class Node<T> {
+  public T value;
   public Node next;
-  public Node(int value){this.value = value;}
+  public Node(T value){this.value = value;}
 
 }

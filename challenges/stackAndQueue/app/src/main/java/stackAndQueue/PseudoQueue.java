@@ -11,7 +11,7 @@ public class PseudoQueue {
   public void dequeue() {
     if (stackTwo.isEmpty())
       while (!stackOne.isEmpty()) {
-        stackTwo.push(stackOne.pop());
+        stackTwo.push((Integer) stackOne.pop());
       }
     stackTwo.pop();
   }

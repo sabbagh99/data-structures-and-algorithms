@@ -24,5 +24,13 @@
 ### we used the pop and push methods in the stack to deal with enqueue and dequeue the time and space  complexity is  O(1)
 
 ## solution
-![whietbord](../assets/queueWithStack.jpeg)
+![whiteboard](../assets/queueWithStack.jpeg)
 
+
+### *code challenge 12*
+## Challenge Description
+### Creating a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+## Approach & Efficiency
+### we used the queue methods to for enqueue and dequeue the  time and space  complexity is  O(1)
+## solution
+![whiteboard](../assets/fifo-animal-shelter.jpeg)
