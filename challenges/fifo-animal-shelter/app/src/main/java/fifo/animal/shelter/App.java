@@ -20,7 +20,7 @@ public class App {
 //      System.out.println(animal);
 //      System.out.println(animal.dequeue());
 
-      System.out.println(multiBracketValidation.multiBracketValidation("{(})"));
+      System.out.println(multiBracketValidation.multiBracketValidation(")("));
 
     }
 }
