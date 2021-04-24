@@ -3,25 +3,26 @@ package ZipTwoLinkedLists;
 import java.util.ArrayList;
 
 public class LinkedList {
+  static LinkedList newLinkedList = new LinkedList();
   public Node head;
   public Node last = null;
 
-  public static String zipLists(LinkedList one, LinkedList2 two) {
-    Node oneCurrent = one.head, twoCurrent = two.newHead;
-    Node oneNext, twoNext;
-    while (oneCurrent != null && twoCurrent != null) {
-      oneNext = oneCurrent.next;
-      twoNext = twoCurrent.next;
+  public static String zipLists(LinkedList one, LinkedList two) {
+    Node oneCurrent = one.head, twoCurrent = two.head;
 
-      twoCurrent.next = oneNext;
-      oneCurrent.next = twoCurrent;
+    while (oneCurrent != null || twoCurrent != null) {
 
-      oneCurrent = oneNext;
-      twoCurrent = twoNext;
+      if (oneCurrent != null) {
+        newLinkedList.append(oneCurrent.value);
+        oneCurrent = oneCurrent.next;
+      }
 
+      if (twoCurrent != null) {
+        newLinkedList.append(twoCurrent.value);
+        twoCurrent = twoCurrent.next;
+      }
     }
-    two.newHead = twoCurrent;
-    return one.toString();
+    return newLinkedList.toString();
   }
 
   public int insert(int value) {
@@ -58,6 +59,7 @@ public class LinkedList {
     Node newNode = new Node(value);
     if (head == null) {
       head = new Node(value);
+      return;
     }
     newNode.next = null;
     last = head;
@@ -115,6 +117,10 @@ public class LinkedList {
     }
     return kNode;
   }
+   public void deleteList()
+  {
+    head = null;
+  }
 
   public String toString() {
     String string = "";
@@ -127,35 +133,5 @@ public class LinkedList {
       string += "NULL";
     }
     return string;
-  }
-}
-
-class LinkedList2 {
-  public Node newHead;
-
-  public int insertTwo(int value) {
-    try {
-      Node current = newHead;
-      newHead = new Node(value);
-      if (current != null) {
-        newHead.next = current;
-      }
-    } catch (Exception e) {
-      System.out.println("problem in insert method");
-    }
-    return newHead.value;
-  }
-
-  public String toString() {
-    String string2 = "";
-    Node current2 = newHead;
-    while (current2 != null) {
-      string2 += "{" + current2.value + "}->";
-      current2 = current2.next;
-    }
-    if (newHead != null) {
-      string2 += "NULL";
-    }
-    return string2;
   }
 }

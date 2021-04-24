@@ -1,10 +1,10 @@
 stackAndQueue/Node.java
  stackAndQueue.Node
-stackAndQueue/App.java
- stackAndQueue.App
+stackAndQueue/PseudoQueue.java
+ stackAndQueue.PseudoQueue
 stackAndQueue/Stack.java
  stackAndQueue.Stack
 stackAndQueue/Queue.java
  stackAndQueue.Queue
-stackAndQueue/PseudoQueue.java
- stackAndQueue.PseudoQueue
+stackAndQueue/App.java
+ stackAndQueue.App
