@@ -1,6 +1,6 @@
 package stackAndQueue;
 
-public class Queue {
+public class Queue<T> {
   Node front;
   Node rear;
 
@@ -15,24 +15,23 @@ public class Queue {
     }
   }
 
-  public int dequeue() {
+  public T dequeue() {
     Node temp = null;
     if (front == null) {
-      System.out.println(" front is null");
-      return -1;
+      return null;
     } else {
       temp = front;
 
       front = temp.next;
       temp.next = null;
     }
-    return temp.value;
+    return (T) temp.value;
   }
 
-  public int peek() {
+  public T peek() {
     if (front != null)
-      return front.value;
-    return -1;
+      return (T)front.value;
+    return null;
   }
 
   public boolean isEmpty() {

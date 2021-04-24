@@ -1,4 +1,5 @@
 # Stacks and Queues
+### *code challenge 10*
 ## In this code challenge we  learned how to deal with Stacks and Queues and it's very important to know it.
 ## Challenge
 ## It was required to create tow class  for the stack, queues and for node.
@@ -15,3 +16,21 @@
 * #### `peek:`This method will view the value of the front Node in the queue.
 * #### `isEmpty:` This method returns true when queue is empty otherwise returns false.
 
+### *code challenge 11*
+## Challenge Description
+### In this code challenge it was required to Implement a Queue using two Stacks.
+
+## Approach & Efficiency
+### we used the pop and push methods in the stack to deal with enqueue and dequeue the time and space  complexity is  O(1)
+
+## solution
+![whiteboard](../assets/queueWithStack.jpeg)
+
+
+### *code challenge 12*
+## Challenge Description
+### Creating a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+## Approach & Efficiency
+### we used the queue methods to for enqueue and dequeue the  time and space  complexity is  O(1)
+## solution
+![whiteboard](../assets/fifo-animal-shelter.jpeg)

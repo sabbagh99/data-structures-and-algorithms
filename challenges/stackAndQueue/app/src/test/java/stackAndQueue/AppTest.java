@@ -4,6 +4,9 @@
 package stackAndQueue;
 
 import org.junit.Test;
+import utilities.AnimalShelter;
+import utilities.Cat;
+import utilities.Dog;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -24,8 +27,8 @@ public class AppTest {
     assertEquals(3, stack.peek());//Can successfully peek the next item on the stack
     stack.pop();
     assertTrue(stack.isEmpty());//Can successfully instantiate an empty stack
-    assertEquals(-1, stack.pop());//Calling pop or peek on empty stack raises exception
-    assertEquals(-1, stack.peek());//Calling pop or peek on empty stack raises exception
+    assertEquals(null, stack.pop());//Calling pop or peek on empty stack raises exception
+    assertEquals(null, stack.peek());//Calling pop or peek on empty stack raises exception
 //    ---------------------------------------------Queue Test-------------------------------------------------- -
     Queue queue = new Queue();
     queue.enqueue(1);
@@ -39,7 +42,35 @@ public class AppTest {
     queue.dequeue();
     assertEquals("", queue.toString());//Can successfully empty a queue after multiple dequeues
     assertTrue(queue.isEmpty());//Can successfully instantiate an empty queue
-    assertEquals(-1, queue.peek());//Calling dequeue or peek on empty queue raises exception
-    assertEquals(-1, queue.dequeue());//Calling dequeue or peek on empty queue raises exception
+    assertEquals(null, queue.peek());//Calling dequeue or peek on empty queue raises exception
+    assertEquals(null, queue.dequeue());//Calling dequeue or peek on empty queue raises exception
   }
+  @Test
+  public void testPseudoQueue(){
+    PseudoQueue pseudoQueue = new PseudoQueue();
+  assertEquals("PseudoQueue{stackOne=, stackTwo=}",pseudoQueue.toString());
+  pseudoQueue.enqueue(3);
+  assertEquals("PseudoQueue{stackOne={3}, stackTwo=}",pseudoQueue.toString());
+    pseudoQueue.enqueue(4);
+    assertEquals("PseudoQueue{stackOne={4}{3}, stackTwo=}",pseudoQueue.toString());
+    pseudoQueue.dequeue();
+    assertEquals("PseudoQueue{stackOne=, stackTwo={4}}",pseudoQueue.toString());
+
+  }
+
+  @Test public void testAnimalShelter(){
+
+    AnimalShelter animal = new AnimalShelter();
+    Dog dog = new Dog("dog");
+    Cat cat = new Cat("cat");
+    assertEquals("",animal.toString());
+    animal.enqueue(cat);
+    assertEquals("{cat}",animal.toString());
+    animal.enqueue(dog);
+    assertEquals("{cat}{dog}",animal.toString());
+    animal.dequeue();
+    animal.dequeue();
+    assertEquals("",animal.toString());
+    animal.dequeue();
+    assertEquals(null,animal.dequeue());  }
 }

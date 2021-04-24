@@ -3,31 +3,69 @@
  */
 package stackAndQueue;
 
+import utilities.AnimalShelter;
+import utilities.Cat;
+import utilities.Dog;
+
 public class App {
 
 
   public static void main(String[] args) {
-    Stack stack = new Stack();
-    Queue queue = new Queue();
+//    Stack stack = new Stack();
+//    Queue queue = new Queue();
+
+    ///////////////////// Stack //////////////////
 //    stack.push(1);
 //    stack.push(2);
-//
-//    System.out.println(stack.toString());
-//
-//
-//    System.out.println(stack.peek());
-////    System.out.println(stack.isEmpty());
-//    System.out.println(stack.toString());
 
-    queue.enqueue(1);
-    queue.enqueue(2);
-    queue.enqueue(3);
-    System.out.println(queue.toString());
-    System.out.println(queue.dequeue());
-    System.out.println(queue.toString());
-    System.out.println(queue.peek());
-    System.out.println(queue.toString());
+//    System.out.println(stack.toString());
+//    System.out.println(stack.peek());
+//    System.out.println(stack.pop());
+//    System.out.println(stack.pop());
+//    System.out.println(stack.peek());
+//    System.out.println(stack.isEmpty());
+//    System.out.println(stack.toString());
+/////////////////////// Queue //////////////////
+//    queue.enqueue(10);
+//    queue.enqueue(15);
+//    queue.enqueue(20);
+//    System.out.println(queue.toString());
+//    System.out.println(queue.front.value);
+//    System.out.println(queue.rear.value);
+//
+//    System.out.println(queue.dequeue());
+//    System.out.println(queue.dequeue());
+//    System.out.println(queue.dequeue());
+//    System.out.println(queue.toString());
+//    System.out.println(queue.peek());
+//    System.out.println(queue.toString());
 //    System.out.println(queue.isEmpty());
+
+//////////////////// PseudoQueue/////////////
+
+//    PseudoQueue pseudoQueue = new PseudoQueue();
+////
+//    pseudoQueue.enqueue(20);
+//    pseudoQueue.enqueue(15);
+//    pseudoQueue.enqueue(10);
+//    pseudoQueue.enqueue(5);
+////
+//    System.out.println(pseudoQueue.toString());
+//    pseudoQueue.dequeue();
+//    System.out.println(pseudoQueue.toString());
+
+
+//////////////  AnimalShelter /////////////////
+//    AnimalShelter animal = new AnimalShelter();
+//    Dog dog = new Dog("dog");
+//    Cat cat = new Cat("cat");
+//    animal.enqueue(cat);
+//    animal.enqueue(dog);
+//    System.out.println(animal);
+//    System.out.println(animal.dequeue());
+//    System.out.println(animal.dequeue());
+//    System.out.println(animal.dequeue());
+
   }
 
 

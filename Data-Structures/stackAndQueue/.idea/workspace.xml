@@ -17,6 +17,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/main/stackAndQueue/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/main/stackAndQueue/App.class" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/stackAndQueue/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/stackAndQueue/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tree/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../tree/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tree/app/src/main/java/tree/BiinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tree/app/src/main/java/tree/BiinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tree/app/src/main/java/tree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tree/app/src/main/java/tree/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tree/app/src/main/java/tree/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tree/app/src/main/java/tree/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../challenges/testCode14/src/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../challenges/testCode14/src/test.java" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/app/build/classes/java/test/stackAndQueue/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/java/test/stackAndQueue/AppTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/classes/stackAndQueue.AppTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/classes/stackAndQueue.AppTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/tests/test/index.html" afterDir="false" />
@@ -27,6 +36,7 @@
       <change beforePath="$PROJECT_DIR$/../../challenges/ArrayReverse.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../challenges/ArrayShift.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../challenges/BinarySearch.java" beforeDir="false" />
+>>>>>>> 659cea61bf818b69848eb84d1fe44383c11835a7
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +56,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="multi-bracket-validation" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1rCm6BzIkLNdN2SHDFotq1aHhsO" />
@@ -173,8 +188,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/stackAndQueue/App.java</url>
+<<<<<<< HEAD
+          <line>37</line>
+          <option name="timeStamp" value="9" />
+=======
           <line>39</line>
           <option name="timeStamp" value="6" />
+>>>>>>> 659cea61bf818b69848eb84d1fe44383c11835a7
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

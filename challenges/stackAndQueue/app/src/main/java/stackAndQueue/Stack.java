@@ -1,8 +1,7 @@
 package stackAndQueue;
 
-public class Stack {
-  Node top;
-
+public class Stack<T>{
+   Node top;
   public void push(int value) {
     Node newNode = new Node(value);
     if (top == null) {
@@ -15,27 +14,28 @@ public class Stack {
     }
   }
 
-  public int pop() {
+  public T pop() {
     Node newTop = top;
     try {
       top = top.next;
       newTop.next = null;
     } catch (Exception e) {
       System.out.println(e);
-      return -1;
+      return null;
     }
-    return newTop.value;
-
+    return (T) newTop.value;
 
   }
 
-  public int peek() {
+  public T peek() {
     try {
-      return top.value;
+      return (T) top.value;
     } catch (Exception e) {
       System.out.println(e);
+      return null;
     }
-    return -1;
+
+
   }
 
   public boolean isEmpty() {
