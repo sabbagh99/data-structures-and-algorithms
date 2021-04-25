@@ -6,6 +6,7 @@ package stackAndQueue;
 import utilities.AnimalShelter;
 import utilities.Cat;
 import utilities.Dog;
+import utilities.MultiBracketValidation;
 
 public class App {
 
@@ -13,11 +14,11 @@ public class App {
   public static void main(String[] args) {
 //    Stack stack = new Stack();
 //    Queue queue = new Queue();
-
-    ///////////////////// Stack //////////////////
+//
+//    /////////////////// Stack //////////////////
 //    stack.push(1);
 //    stack.push(2);
-
+//
 //    System.out.println(stack.toString());
 //    System.out.println(stack.peek());
 //    System.out.println(stack.pop());
@@ -66,6 +67,10 @@ public class App {
 //    System.out.println(animal.dequeue());
 //    System.out.println(animal.dequeue());
 
+
+    ////////////////// MultiBracketValidation////////////////////
+//    MultiBracketValidation multiBracketValidation = new MultiBracketValidation();
+//    System.out.println(    multiBracketValidation.multiBracketValidation("{}"));
   }
 
 

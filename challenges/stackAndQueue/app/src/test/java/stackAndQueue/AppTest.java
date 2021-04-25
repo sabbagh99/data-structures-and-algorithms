@@ -7,9 +7,9 @@ import org.junit.Test;
 import utilities.AnimalShelter;
 import utilities.Cat;
 import utilities.Dog;
+import utilities.MultiBracketValidation;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class AppTest {
   @Test
@@ -45,32 +45,49 @@ public class AppTest {
     assertEquals(null, queue.peek());//Calling dequeue or peek on empty queue raises exception
     assertEquals(null, queue.dequeue());//Calling dequeue or peek on empty queue raises exception
   }
+
   @Test
-  public void testPseudoQueue(){
+  public void testPseudoQueue() {
     PseudoQueue pseudoQueue = new PseudoQueue();
-  assertEquals("PseudoQueue{stackOne=, stackTwo=}",pseudoQueue.toString());
-  pseudoQueue.enqueue(3);
-  assertEquals("PseudoQueue{stackOne={3}, stackTwo=}",pseudoQueue.toString());
+    assertEquals("PseudoQueue{stackOne=, stackTwo=}", pseudoQueue.toString());
+    pseudoQueue.enqueue(3);
+    assertEquals("PseudoQueue{stackOne={3}, stackTwo=}", pseudoQueue.toString());
     pseudoQueue.enqueue(4);
-    assertEquals("PseudoQueue{stackOne={4}{3}, stackTwo=}",pseudoQueue.toString());
+    assertEquals("PseudoQueue{stackOne={4}{3}, stackTwo=}", pseudoQueue.toString());
     pseudoQueue.dequeue();
-    assertEquals("PseudoQueue{stackOne=, stackTwo={4}}",pseudoQueue.toString());
+    assertEquals("PseudoQueue{stackOne=, stackTwo={4}}", pseudoQueue.toString());
 
   }
 
-  @Test public void testAnimalShelter(){
+  @Test
+  public void testAnimalShelter() {
 
     AnimalShelter animal = new AnimalShelter();
     Dog dog = new Dog("dog");
     Cat cat = new Cat("cat");
-    assertEquals("",animal.toString());
+    assertEquals("", animal.toString());
     animal.enqueue(cat);
-    assertEquals("{cat}",animal.toString());
+    assertEquals("{cat}", animal.toString());
     animal.enqueue(dog);
-    assertEquals("{cat}{dog}",animal.toString());
+    assertEquals("{cat}{dog}", animal.toString());
     animal.dequeue();
     animal.dequeue();
-    assertEquals("",animal.toString());
+    assertEquals("", animal.toString());
     animal.dequeue();
-    assertEquals(null,animal.dequeue());  }
+    assertEquals(null, animal.dequeue());
+  }
+
+  @Test
+  public void testMultiBracketValidation() {
+    MultiBracketValidation multiBracketValidation = new MultiBracketValidation();
+
+    assertEquals(false, multiBracketValidation.multiBracketValidation(""));
+    assertTrue(multiBracketValidation.multiBracketValidation("()[[Extra Characters]]"));
+    assertFalse(multiBracketValidation.multiBracketValidation("[}"));
+    assertFalse(multiBracketValidation.multiBracketValidation("{(})"));
+    assertFalse(multiBracketValidation.multiBracketValidation("[({}]"));
+    assertTrue(multiBracketValidation.multiBracketValidation("(){}[[]]"));
+
+
+  }
 }

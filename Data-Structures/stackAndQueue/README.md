@@ -5,13 +5,12 @@
 # Approach & Efficiency
 ## After I created the class I start deal with code as following:
 ### A) `Stack class :`
-* #### `push`: To create new node and push it in the stack.
-* #### `pop`: When  Nodes or items that are removed from the stack are popped.
+* #### `push`:  Take a value as input then  create new node and push it in the stack.
+* #### `pop`: returning  the value for the last node in tha stack and remove it from the stack .
 * #### `peek`: This method will view the value of the top Node in the stack.
 * #### `isEmpty`: This method returns true when stack is empty otherwise returns false.
 ### B) `Queues class:`
-* #### `enqueue:` This method to  add Nodes or items to the queue.
-* #### `dequeue:`This method to remove Nodes or items  from the queue.
-* #### `peek:`This method will view the value of the front Node in the queue.
+* #### `enqueue:` Take a value as input then  create new node and enqueue  it in the queue following FIFO concept.
+* #### `dequeue:`This method to remove Nodes or items  from the queue and return the value for it.
+* #### `peek:`This method will return the value of the front Node in the queue.
 * #### `isEmpty:` This method returns true when queue is empty otherwise returns false.
-
