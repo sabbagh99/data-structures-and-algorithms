@@ -5,7 +5,8 @@ import stackAndQueue.Node;
 public class AnimalShelter<T> {
   Node front;
   Node rear;
-
+  Dog dog = new Dog();
+  Cat cat = new Cat();
   public void enqueue(T value) {
     Node newNode = new Node(value);
     if (rear == null) {
@@ -17,7 +18,9 @@ public class AnimalShelter<T> {
     }
   }
 
-  public T dequeue() {
+  public T dequeue(T pref) {
+    if(dog == null)
+      pref  =(T) cat;
     Node temp = null;
     if (front == null) {
       return null;

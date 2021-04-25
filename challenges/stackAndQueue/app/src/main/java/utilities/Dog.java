@@ -3,6 +3,9 @@ package utilities;
 public class Dog {
   private String dog;
 
+  public Dog() {
+  }
+
   public Dog(String dog) {
     this.dog = dog;
   }
