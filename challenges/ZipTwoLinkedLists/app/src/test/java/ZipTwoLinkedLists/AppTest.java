@@ -4,11 +4,29 @@
 package ZipTwoLinkedLists;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
-    }
+  @Test
+  public void testzipLists() {
+    LinkedList list = new LinkedList();
+    LinkedList list2 = new LinkedList();
+    list.insert(1);
+    list.insert(1);
+    list.insert(1);
+    list2.insert(2);
+    list2.insert(2);
+    list2.insert(2);
+    assertEquals("{1}->{2}->{1}->{2}->{1}->{2}->NULL", list.zipLists(list, list2));
+    LinkedList.newLinkedList.deleteList();
+    list.insert(1);
+    assertEquals("{1}->{2}->{1}->{2}->{1}->{2}->{1}->NULL", list.zipLists(list, list2));
+    LinkedList.newLinkedList.deleteList();
+    assertEquals("", LinkedList.newLinkedList.toString());
+
+
+
+  }
+
 }

@@ -24,3 +24,12 @@
 * #### In the last method which is insert After we tried to add value in the middle, and the end of the linked list.
 
 [whiteboard solution](./linkedList.jpeg)
+
+# k-th value
+## In this code challenge it was required to Return the node’s value that is k from the end of the linked.
+### this step show what i did :
+* #### save the linked list node in a array list then save it in a normal array
+* #### Reverse the new array and loop in this array.
+* #### find the value of the provided index value.
+
+[whiteboard solution](./KlinkedList.jpeg)

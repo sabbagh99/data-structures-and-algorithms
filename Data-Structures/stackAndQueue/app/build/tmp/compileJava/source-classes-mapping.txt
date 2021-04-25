@@ -1,0 +1,10 @@
+stackAndQueue/Node.java
+ stackAndQueue.Node
+stackAndQueue/PseudoQueue.java
+ stackAndQueue.PseudoQueue
+stackAndQueue/Stack.java
+ stackAndQueue.Stack
+stackAndQueue/Queue.java
+ stackAndQueue.Queue
+stackAndQueue/App.java
+ stackAndQueue.App
