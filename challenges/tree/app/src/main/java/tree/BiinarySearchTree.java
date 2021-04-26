@@ -1,11 +1,11 @@
 package tree;
 
-public class BiinarySearchTree {
+public class BiinarySearchTree<T> {
   Node root;
   Node currentRoot;
   Node parentRoot;
 
-  public void add(int key) {
+  public void add(T key) {
     if (root == null) {
       root = new Node(key);
       return;
@@ -13,7 +13,7 @@ public class BiinarySearchTree {
       currentRoot = root;
       while (root != null) {
         parentRoot = currentRoot;
-        if (key < currentRoot.value) {
+        if ( (Integer)key < (Integer)currentRoot.value) {
           currentRoot = currentRoot.left;
           if (currentRoot == null) {
             parentRoot.left = new Node(key);
@@ -31,14 +31,14 @@ public class BiinarySearchTree {
   }
 
 
-  public boolean contains(int value) {
+  public boolean contains(T value) {
     Node currentRoot = root;
     if (root == null) {
       return false;
     } else {
       while (currentRoot.value != value) {
 
-        if (value < currentRoot.value) {
+        if ((Integer)value < (Integer)currentRoot.value) {
           currentRoot = currentRoot.left;
 
         } else {
@@ -54,7 +54,15 @@ public class BiinarySearchTree {
 
 
   }
-
+public Integer findMaximumValue(Node root){
+    if (root == null)
+      return null;
+    else {
+      while (root.right != null)
+        root = root.right;
+    }
+  return ((Integer)root.value);
+  }
   @Override
   public String toString() {
     return "BiinarySearchTree{" +

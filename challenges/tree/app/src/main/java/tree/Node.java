@@ -1,12 +1,12 @@
 package tree;
 
-public class Node {
+public class Node<T> {
 
-  public int value;
+  public T value;
   Node left;
   Node right;
 
-  public Node(int value) {
+  public Node(T value) {
     this.value = value;
     left = null;
     right = null;

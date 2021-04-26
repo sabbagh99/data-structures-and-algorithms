@@ -8,7 +8,7 @@ public class Tree {
   public ArrayList preOrder(Node root) {
 
 
-    arr.add(root.value);
+    arr.add((Integer)root.value);
     if (root.left != null)
       preOrder(root.left);
 
@@ -22,7 +22,7 @@ public class Tree {
       inOrder(root.left);
     }
 
-    arr.add(root.value);
+    arr.add((Integer)root.value);
     if (root.right != null)
       inOrder(root.right);
     return arr;
@@ -38,7 +38,7 @@ public class Tree {
       postOrder(root.right);
     }
 
-    arr.add(root.value);
+    arr.add((Integer)root.value);
     return arr;
   }
 
