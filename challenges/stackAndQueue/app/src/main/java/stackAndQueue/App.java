@@ -13,7 +13,7 @@ public class App {
 
   public static void main(String[] args) {
 //    Stack stack = new Stack();
-//    Queue queue = new Queue();
+    Queue queue = new Queue();
 //
 //    /////////////////// Stack //////////////////
 //    stack.push(1);
@@ -56,18 +56,18 @@ public class App {
 //    System.out.println(pseudoQueue.toString());
 
 
-//////////////  AnimalShelter /////////////////
+////////////  AnimalShelter /////////////////
 //    AnimalShelter animal = new AnimalShelter();
 //    Dog dog = new Dog("dog");
 //    Cat cat = new Cat("cat");
-//    animal.enqueue(cat);
 //    animal.enqueue(dog);
-//    System.out.println(animal);
-//    System.out.println(animal.dequeue());
-//    System.out.println(animal.dequeue());
-//    System.out.println(animal.dequeue());
-
-
+//    animal.enqueue(cat);
+//    System.out.println(animal.toString());
+//    System.out.println(animal.dequeue("dog"));
+//    System.out.println(animal.dequeue("cat"));
+//    System.out.println(animal.dequeue(""));
+//    System.out.println(animal.toString());
+//    System.out.println(animal.dequeue("dog"));
     ////////////////// MultiBracketValidation////////////////////
 //    MultiBracketValidation multiBracketValidation = new MultiBracketValidation();
 //    System.out.println(    multiBracketValidation.multiBracketValidation("{}"));
