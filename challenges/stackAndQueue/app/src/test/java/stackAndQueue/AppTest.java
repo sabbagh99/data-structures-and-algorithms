@@ -69,12 +69,16 @@ public class AppTest {
     animal.enqueue(cat);
     assertEquals("{cat}", animal.toString());
     animal.enqueue(dog);
-    assertEquals("{cat}{dog}", animal.toString());
-    animal.dequeue();
-    animal.dequeue();
+    assertEquals("{dog}{cat}", animal.toString());
+    animal.dequeue("cat");
+
+    assertEquals("{dog}", animal.toString());
+    assertEquals(null,  animal.dequeue("bird"));
+
+    animal.dequeue("dog");
     assertEquals("", animal.toString());
-    animal.dequeue();
-    assertEquals(null, animal.dequeue());
+
+    assertEquals(null,  animal.dequeue("dog"));
   }
 
   @Test
