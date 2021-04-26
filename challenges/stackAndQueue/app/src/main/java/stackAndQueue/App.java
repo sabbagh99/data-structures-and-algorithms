@@ -57,15 +57,15 @@ public class App {
 
 
 //////////////  AnimalShelter /////////////////
-//    AnimalShelter animal = new AnimalShelter();
-//    Dog dog = new Dog("dog");
-//    Cat cat = new Cat("cat");
-//    animal.enqueue(cat);
-//    animal.enqueue(dog);
-//    System.out.println(animal);
-//    System.out.println(animal.dequeue());
-//    System.out.println(animal.dequeue());
-//    System.out.println(animal.dequeue());
+    AnimalShelter animal = new AnimalShelter();
+    Dog dog = new Dog("dog");
+    Cat cat = new Cat("cat");
+    animal.enqueue(cat);
+    animal.enqueue(dog);
+    System.out.println(animal);
+    System.out.println(animal.dequeue());
+    System.out.println(animal.dequeue());
+    System.out.println(animal.dequeue());
 
 
     ////////////////// MultiBracketValidation////////////////////
