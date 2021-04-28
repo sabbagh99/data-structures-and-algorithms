@@ -32,3 +32,13 @@
 ## Solution
 ![whiteboard](../assets/maxValue.jpeg)
 
+
+# Code challenge 17 (breadth first )
+### we have tree contain values, and we need to  traversal in this array using breadth method.
+
+## Challenge Description
+### We will  write a breadth first traversal method which takes a Binary Tree as its unique input.
+## Approach & Efficiency
+### We just have one method for this challenge which is `breadthFirst` this method take node as argument and start looping through the tree and save each value of it inside array and return it .
+## Solution
+![whiteboard](../assets/breadthFirst.jpeg)
