@@ -64,7 +64,7 @@ public class AppTest {
 
   @Test
   public void testbinarySearchTree(){ // testing the max value for the binary  tree
-    BiinarySearch binarySearch = new BiinarySearch();
+    BinaryTree binarySearch = new BinaryTree();
     assertEquals(0,binarySearch.traverseTree(binarySearch.root));
     binarySearch.root = new Node(1);
     assertEquals(1,binarySearch.traverseTree(binarySearch.root));
