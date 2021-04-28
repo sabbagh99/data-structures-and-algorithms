@@ -31,3 +31,4 @@
 ### We just have one method for this challenge which is `traverseTree` this method take node as argument and it's using recursion and returning the maximum value.
 ## Solution
 ![whiteboard](../assets/maxValue.jpeg)
+
