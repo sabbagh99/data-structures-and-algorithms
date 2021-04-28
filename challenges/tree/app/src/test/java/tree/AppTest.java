@@ -38,6 +38,26 @@ public class AppTest {
 
   }
 
+
+  @Test
+  public void testBreadthFirst() throws InterruptedException {
+    BiinarySearchTree biinarySearchTree = new BiinarySearchTree();
+
+    assertEquals(null, biinarySearchTree.breadthFirst(biinarySearchTree.root));
+
+    biinarySearchTree.add(5);
+
+    assertEquals("[5]", biinarySearchTree.breadthFirst(biinarySearchTree.root)
+                                                     .toString());
+    biinarySearchTree.add(3);
+    biinarySearchTree.add(7);
+    biinarySearchTree.add(1);
+    biinarySearchTree.add(9);
+    assertEquals("[5, 3, 7, 1, 9]", biinarySearchTree.breadthFirst(biinarySearchTree.root)
+                                                     .toString());
+
+  }
+
   @Test
   public void testBinaryTree(){ // testing the max value for the binary  tree
     BinaryTree binaryTree = new BinaryTree();

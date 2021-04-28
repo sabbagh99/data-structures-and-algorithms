@@ -1,9 +1,14 @@
 package tree;
 
+import sun.misc.Queue;
+
+import java.util.ArrayList;
+
 public class BiinarySearchTree<T> {
   Node root;
   Node currentRoot;
   Node parentRoot;
+
 
   public void add(T key) {
     if (root == null) {
@@ -13,7 +18,7 @@ public class BiinarySearchTree<T> {
       currentRoot = root;
       while (root != null) {
         parentRoot = currentRoot;
-        if ( (Integer)key < (Integer)currentRoot.value) {
+        if ((Integer) key < (Integer) currentRoot.value) {
           currentRoot = currentRoot.left;
           if (currentRoot == null) {
             parentRoot.left = new Node(key);
@@ -38,7 +43,7 @@ public class BiinarySearchTree<T> {
     } else {
       while (currentRoot.value != value) {
 
-        if ((Integer)value < (Integer)currentRoot.value) {
+        if ((Integer) value < (Integer) currentRoot.value) {
           currentRoot = currentRoot.left;
 
         } else {
@@ -54,15 +59,40 @@ public class BiinarySearchTree<T> {
 
 
   }
-public Integer findMaximumValue(Node root){
+
+  public Integer findMaximumValue(Node root) {
     if (root == null)
       return null;
     else {
       while (root.right != null)
         root = root.right;
     }
-  return ((Integer)root.value);
+    return ((Integer) root.value);
   }
+
+  public T breadthFirst(Node root) throws InterruptedException {
+    if (root ==null)
+      return null;
+
+    ArrayList<Integer> arr = new ArrayList<>();
+    Queue breadth = new Queue();
+    breadth.enqueue(root);
+
+
+  while (!breadth.isEmpty()) {
+    root = (Node) breadth.dequeue();
+    arr.add((Integer) root.value);
+    if (root.left != null)
+      breadth.enqueue(root.left);
+
+    if (root.right != null)
+      breadth.enqueue(root.right);
+  }
+
+    return (T) arr;
+  }
+
+
   @Override
   public String toString() {
     return "BiinarySearchTree{" +
