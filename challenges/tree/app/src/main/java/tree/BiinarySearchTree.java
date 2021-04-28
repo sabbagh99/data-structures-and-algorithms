@@ -71,19 +71,24 @@ public class BiinarySearchTree<T> {
   }
 
   public T breadthFirst(Node root) throws InterruptedException {
+    if (root ==null)
+      return null;
+
     ArrayList<Integer> arr = new ArrayList<>();
     Queue breadth = new Queue();
     breadth.enqueue(root);
 
-    while (!breadth.isEmpty()) {
-      root = (Node) breadth.dequeue();
-      arr.add((Integer) root.value);
-      if (root.left != null)
-        breadth.enqueue(root.left);
 
-      if (root.right != null)
-        breadth.enqueue(root.right);
-    }
+  while (!breadth.isEmpty()) {
+    root = (Node) breadth.dequeue();
+    arr.add((Integer) root.value);
+    if (root.left != null)
+      breadth.enqueue(root.left);
+
+    if (root.right != null)
+      breadth.enqueue(root.right);
+  }
+
     return (T) arr;
   }
 

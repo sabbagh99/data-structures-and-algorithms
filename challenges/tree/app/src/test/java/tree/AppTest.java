@@ -19,17 +19,42 @@ public class AppTest {
     binaryTree.add(3);
     binaryTree.add(7);
 
-    assertEquals("[5, 3, 7]", tree.preOrder(binaryTree.root).toString());//Can successfully add a left child and right child to a single root node
+    assertEquals("[5, 3, 7]", tree.preOrder(binaryTree.root)
+                                  .toString());//Can successfully add a left child and right child to a single root node
     tree.arr.clear();
     binaryTree.add(1);
     binaryTree.add(9);
-    assertEquals("[1, 3, 5, 7, 9]", tree.inOrder(binaryTree.root).toString());//Can successfully return a collection from an inorder traversal
+    assertEquals("[1, 3, 5, 7, 9]", tree.inOrder(binaryTree.root)
+                                        .toString());//Can successfully return a collection from an inorder traversal
 
     tree.arr.clear();
-    assertEquals("[5, 3, 1, 7, 9]", tree.preOrder(binaryTree.root).toString());//Can successfully return a collection from a preorder traversal
+    assertEquals("[5, 3, 1, 7, 9]", tree.preOrder(binaryTree.root)
+                                        .toString());//Can successfully return a collection from a preorder traversal
 
     tree.arr.clear();
-    assertEquals("[1, 3, 9, 7, 5]", tree.postOrder(binaryTree.root).toString());//Can successfully return a collection from a postorder traversal
+    assertEquals("[1, 3, 9, 7, 5]", tree.postOrder(binaryTree.root)
+                                        .toString());//Can successfully return a collection from a postorder traversal
+
+
+  }
+
+
+  @Test
+  public void testBreadthFirst() throws InterruptedException {
+    BiinarySearchTree biinarySearchTree = new BiinarySearchTree();
+
+    assertEquals(null, biinarySearchTree.breadthFirst(biinarySearchTree.root));
+
+    biinarySearchTree.add(5);
+
+    assertEquals("[5]", biinarySearchTree.breadthFirst(biinarySearchTree.root)
+                                                     .toString());
+    biinarySearchTree.add(3);
+    biinarySearchTree.add(7);
+    biinarySearchTree.add(1);
+    biinarySearchTree.add(9);
+    assertEquals("[5, 3, 7, 1, 9]", biinarySearchTree.breadthFirst(biinarySearchTree.root)
+                                                     .toString());
 
 
   }
