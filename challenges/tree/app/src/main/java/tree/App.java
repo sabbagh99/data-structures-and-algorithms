@@ -8,14 +8,15 @@ public class App {
 
   public static void main(String[] args) throws InterruptedException {
     BiinarySearchTree biinarySearchTree = new BiinarySearchTree();
+
 //    Tree tree = new Tree();
 //    System.out.println(biinarySearchTree);
 //    System.out.println(tree);
-    biinarySearchTree.add(5);
-    biinarySearchTree.add(3);
-    biinarySearchTree.add(7);
-    biinarySearchTree.add(1);
-    biinarySearchTree.add(9);
+//    biinarySearchTree.add(5);
+//    biinarySearchTree.add(3);
+//    biinarySearchTree.add(7);
+//    biinarySearchTree.add(1);
+//    biinarySearchTree.add(9);
 //    System.out.println(biinarySearchTree.findMaximumValue(biinarySearchTree.root));
 //    System.out.println(biinarySearchTree.contains(50));
 //    System.out.println(tree.inOrder(biinarySearchTree.root));
@@ -26,8 +27,12 @@ public class App {
 //
 //    System.out.println(tree.postOrder(biinarySearchTree.root));
 
-    System.out.println(biinarySearchTree.breadthFirst(biinarySearchTree.root));
-
+//    BinaryTree binaryTree = new BinaryTree();
+//    binaryTree.root = new Node(1);
+//    binaryTree.root.left = new Node(7);
+//    binaryTree.root.right = new Node(-5);
+//    binaryTree.root.left.left = new Node(4);
+//    System.out.println(binaryTree.traverseTree(binaryTree.root));
 
   }
 }

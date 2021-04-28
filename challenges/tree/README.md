@@ -20,3 +20,15 @@
 * #### `add:` this method to add take integer as  input and add it in the correct location in the tree
 * #### `contain:` for checking if the provided value exist in the tree or not.
 
+
+# Code challenge 16 (find maximum value)
+### we have tree contain values, and we need to  traversal in this array and  return the max value on it.
+
+## Challenge Description
+### In this challenge we need to deal with binary tree by traversal in this array and get the max value.
+
+## Approach & Efficiency
+### We just have one method for this challenge which is `traverseTree` this method take node as argument and it's using recursion and returning the maximum value.
+## Solution
+![whiteboard](../assets/maxValue.jpeg)
+
