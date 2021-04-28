@@ -6,7 +6,7 @@ package tree;
 
 public class App {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws NullPointerException{
 //    BiinarySearchTree biinarySearchTree = new BiinarySearchTree();
 //    Tree tree = new Tree();
 //    System.out.println(biinarySearchTree);
@@ -25,7 +25,12 @@ public class App {
 //    tree.arr.clear();
 //
 //    System.out.println(tree.postOrder(biinarySearchTree.root));
-
+//    BinaryTree binaryTree = new BinaryTree();
+//    binaryTree.root = new Node(1);
+//    binaryTree.root.left = new Node(7);
+//    binaryTree.root.right = new Node(-5);
+//    binaryTree.root.left.left = new Node(4);
+//    System.out.println(binaryTree.traverseTree(binaryTree.root));
 
   }
 }
