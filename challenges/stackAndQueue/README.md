@@ -34,3 +34,11 @@
 ### we used the queue methods to for enqueue and dequeue the  time and space  complexity is  O(1)
 ## solution
 ![whiteboard](../assets/fifo-animal-shelter.jpeg)
+
+### *code challenge 13*
+## Challenge Description
+### We have string as  argument for a function this string contain brackets , and should return a boolean representing whether or not the brackets in the string are balanced.
+## Approach & Efficiency
+### using for loop to loop over the string and check the index value every time   the  time complexity= O(n) and  space  complexity is  O(1)
+## solution
+![whiteboard](../assets/multiBrackets.jpeg)

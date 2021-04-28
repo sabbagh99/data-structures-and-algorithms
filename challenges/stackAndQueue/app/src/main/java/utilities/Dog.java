@@ -20,6 +20,6 @@ public class Dog {
 
   @Override
   public String toString() {
-    return "{" + dog  + "}";
+    return dog  ;
   }
 }
