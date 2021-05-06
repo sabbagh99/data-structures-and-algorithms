@@ -3,11 +3,13 @@
  */
 package tree;
 
-import org.junit.Test;
+import org.junit.*;
+import utilities.FizzBuzzTree;
+import utilities.k_aryTree;
 
 import static org.junit.Assert.*;
 
-public class AppTest {
+public class AppTest <T>{
   @Test
   public void testApp() {
     Tree tree = new Tree();
@@ -59,6 +61,32 @@ public class AppTest {
                                                      .toString());
 
 
+
+  }
+
+
+  @Test
+  public void testFizzBuzzTree (){
+
+    k_aryTree root = new k_aryTree(1);
+    FizzBuzzTree fizzBuzzTree = new FizzBuzzTree();
+assertEquals("1 ",fizzBuzzTree.FizzBuzzTree(root));
+    root.children.add(new k_aryTree(2));
+    root.children.add(new k_aryTree(3));
+    assertEquals("1 2 Fizz ",fizzBuzzTree.FizzBuzzTree(root));
+
+    root.children.add(new k_aryTree(4));
+    assertEquals("1 2 Fizz 4 ",fizzBuzzTree.FizzBuzzTree(root));
+
+    root.children.add(new k_aryTree(5));
+    assertEquals("1 2 Fizz 4 buzz ",fizzBuzzTree.FizzBuzzTree(root));
+
+    root.children.add(new k_aryTree(6));
+    root.children.add(new k_aryTree(7));
+    root.children.add(new k_aryTree(8));
+    root.children.add(new k_aryTree(9));
+    root.children.add(new k_aryTree(15));
+    assertEquals("1 2 Fizz 4 buzz Fizz 7 8 Fizz FizzBuzz ",fizzBuzzTree.FizzBuzzTree(root));
 
   }
 
