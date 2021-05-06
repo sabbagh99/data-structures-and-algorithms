@@ -41,6 +41,12 @@ public class App {
     root.children.add(new k_aryTree(9));
     root.children.add(new k_aryTree(15));
     System.out.println(fizzBuzzTree.FizzBuzzTree(root));
+//    BinaryTree binaryTree = new BinaryTree();
+//    binaryTree.root = new Node(1);
+//    binaryTree.root.left = new Node(7);
+//    binaryTree.root.right = new Node(-5);
+//    binaryTree.root.left.left = new Node(4);
+//    System.out.println(binaryTree.traverseTree(binaryTree.root));
 
   }
 }

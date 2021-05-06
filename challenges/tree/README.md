@@ -21,6 +21,31 @@
 * #### `contain:` for checking if the provided value exist in the tree or not.
 
 
+
+
+# Code challenge 16 (find maximum value)
+### we have tree contain values, and we need to  traversal in this array and  return the max value on it.
+
+## Challenge Description
+### In this challenge we need to deal with binary tree by traversal in this array and get the max value.
+
+## Approach & Efficiency
+### We just have one method for this challenge which is `traverseTree` this method take node as argument and it's using recursion and returning the maximum value.
+## Solution
+![whiteboard](../assets/maxValue.jpeg)
+
+
+# Code challenge 17 (breadth first )
+### we have tree contain values, and we need to  traversal in this array using breadth method.
+
+## Challenge Description
+### We will  write a breadth first traversal method which takes a Binary Tree as its unique input.
+## Approach & Efficiency
+### We just have one method for this challenge which is `breadthFirst` this method take node as argument and start looping through the tree and save each value of it inside array and return it .
+## Solution
+![whiteboard](../assets/breadthFirst.jpeg)
+
+
 # Code Challenge: Class 18
 ### know how to implement k-tree and add more than two  children  foo each node.
 ## Challenge Description

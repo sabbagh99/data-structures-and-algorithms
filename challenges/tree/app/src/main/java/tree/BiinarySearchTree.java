@@ -78,7 +78,6 @@ public class BiinarySearchTree<T> {
     Queue breadth = new Queue();
     breadth.enqueue(root);
 
-
   while (!breadth.isEmpty()) {
     root = (Node) breadth.dequeue();
     arr.add((Integer) root.value);
@@ -88,7 +87,6 @@ public class BiinarySearchTree<T> {
     if (root.right != null)
       breadth.enqueue(root.right);
   }
-
     return (T) arr;
   }
 
