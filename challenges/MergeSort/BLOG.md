@@ -41,3 +41,9 @@
 
 ### The input for our function is array with six elements in the step 1 and 2 we will split the array, and we will keep doing that using recursion until we get each element in separate array.
 ### In after we're done with  mergeSort method we will call the merge method to start checking the values and replace them in the correct order so in we can see in step 10,11,19,20 that we are sorted the arrays, and we will merge them in step 21,22 in one array to get the final result
+
+## Big(O)
+
+### Time complexity O(n log n) : where n is the length of the array
+
+### Space complexity O(1)
