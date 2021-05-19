@@ -60,8 +60,6 @@ public class AppTest <T>{
     assertEquals("[5, 3, 7, 1, 9]", biinarySearchTree.breadthFirst(biinarySearchTree.root)
                                                      .toString());
 
-
-
   }
 
 
@@ -103,4 +101,10 @@ assertEquals("1 ",fizzBuzzTree.FizzBuzzTree(root));
     assertTrue(binarySearch.traverseTree(binarySearch.root)==10);
   }
 
+  @Test
+  public void testBinarySearch(){
+
+
+
+  }
 }
