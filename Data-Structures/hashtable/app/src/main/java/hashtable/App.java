@@ -6,5 +6,7 @@ package hashtable;
 public class App {
 
     public static void main(String[] args) {
+      Hashtable hashtable= new Hashtable();
+      hashtable.add("ahmad","001233");
     }
 }
