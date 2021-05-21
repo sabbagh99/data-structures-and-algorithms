@@ -35,4 +35,13 @@
     arr[low] <-- temp
 
 ## Trace
+![Whiteboard](../assets/Quicksort.png)
+### 1. we will select the pivot which is 23 in this solution  and move it the end
+### 2. Then we will look for numbers in the left and right less and larger than the pivot and start swiping them to the correct position
+### 3. keep using recursion and applying this process until we get sorted array.
+
+## Big (O)
+
+### With using the recursion and splitting the array to a halves every time, so the time  and space complexity will be O(nLog n)
+
 
