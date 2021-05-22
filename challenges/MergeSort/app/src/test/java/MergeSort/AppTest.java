@@ -20,5 +20,8 @@ public class AppTest {
     assertEquals("[5, 5, 5, 5, 5]", Arrays.toString(mergeSort.mergesort(arr1)));
     int[] arr2 = {8,4,23,42,16,15};
     assertEquals("[4, 8, 15, 16, 23, 42]", Arrays.toString(mergeSort.mergesort(arr2)));
+
+    int[] arr3 = {5, 5, 3, 4, -1};
+    assertEquals("[-1, 3, 4, 5, 5]", Arrays.toString(mergeSort.mergesort(arr3)));
   }
 }
