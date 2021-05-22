@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21eabcd6-eb22-403d-ac26-d81895865efb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../tree/app/src/main/java/tree/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tree/app/src/main/java/tree/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tree/app/src/test/java/tree/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tree/app/src/test/java/tree/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MergeSort/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MergeSort/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MergeSort/app/src/main/java/MergeSort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MergeSort/app/src/main/java/MergeSort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MergeSort" />
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
