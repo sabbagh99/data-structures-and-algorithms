@@ -4,11 +4,17 @@
 package hashtable;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
-    }
+  @Test
+  public void testHashTable() {
+    Hashtable hashTable = new Hashtable();
+    hashTable.add("ahmad", "0777000000");
+
+    assertEquals("Bucket{key=ahmad, value=0777000000, next=null}", hashTable.arr[589].toString());  // Adding a key/value to your hashtable results in the value being in the data structure
+    assertEquals("0777000000", hashTable.get("ahmad"));//Retrieving based on a key returns the value stored
+    assertEquals(null, hashTable.get("ali")); // Successfully returns null for a key that does not exist in the hashtable
+  }
 }

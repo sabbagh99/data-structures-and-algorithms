@@ -6,7 +6,12 @@ package hashtable;
 public class App {
 
     public static void main(String[] args) {
-      Hashtable hashtable= new Hashtable();
-      hashtable.add("ahmad","001233");
+      Hashtable hashTable= new Hashtable();
+      Bucket bucket= new Bucket();
+      hashTable.add("ahmad","01111");
+      System.out.println(hashTable.get("ahmad"));
+      System.out.println(hashTable.hash("ahmad"));
+//      System.out.println(hashTable.contains("ahmad"));
+      System.out.println(hashTable.arr[589]);
     }
 }
