@@ -1,33 +1,61 @@
 package hashtable;
 
-import static java.lang.Integer.parseInt;
+import java.util.Arrays;
 
 public class Hashtable<T> {
 
-  public void add (String key , T value ){
-    int [] arr = new int[10000];
-    int k = key.length();
-    int sum = 0;
-    for(int i = 0 ; i < k-1 ; i++){
-      sum += key.charAt(i);
+  Bucket[] arr = new Bucket[10000];
+
+  public void add(T key, T value) {
+    Bucket newBucket = new Bucket(key, value);
+    int idx = hash(key);
+    if (arr[idx] == null) {
+      arr[idx] = newBucket;
     }
-    int idx = sum% 99;
-    System.out.println(idx);
-    arr[idx]= (Integer)value;
-    System.out.println(arr[idx]);
+  }
+
+  public Object get(T key) {
+    int idx = hash(key);
+    if (arr[idx] != null) {
+      Bucket temp = arr[idx];
+
+      return temp.value;
+    }
+
+    return null;
 
   }
 
-  public void get(String key){
-    int idx = parseInt(key) % 55;
+  public boolean contains(T key) {
+    int idx = hash(key);
+    if (arr[idx] != null) {
+      Bucket temp = arr[idx];
+      if (temp.key == key)
+        return true;
 
+    }
 
+    return false;
   }
 
-  public boolean  contains(String key){
-    int idx = parseInt(key) % 55;
+  public int hash(T key) {
 
+    int k = key.toString()
+               .length();
+    int sum = 0;
+    for (int i = 0; i <= k - 1; i++) {
+      sum += key.toString()
+                .charAt(i);
+    }
+    int idx = (sum * 599) % 1024;
 
-  return false;
+    return idx;
+  }
+
+  @Override
+  public String toString() {
+    return "Hashtable{" +
+      "arr=" + Arrays.toString(arr) +
+      '}';
   }
 }

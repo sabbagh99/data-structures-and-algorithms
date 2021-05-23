@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ac186bf-6275-4976-8307-65881acb98bb" name="Default Changelist" comment="">
+    <list default="true" id="471d1b37-fa9f-46b7-97fd-ea150c002fc1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hashtable/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashtable/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/hashtable/Hashtable.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashtable/Hashtable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../challenges/MergeSort/app/src/test/java/MergeSort/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../challenges/MergeSort/app/src/test/java/MergeSort/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/hashtable/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/hashtable/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +61,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AppTest.testHashTable">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hashtable.App" />
       <module name="hashtable.app.main" />
@@ -72,8 +79,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest.testHashTable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Data-Structures.hashtable.app.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hashtable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hashtable" />
+      <option name="MAIN_CLASS_NAME" value="hashtable.AppTest" />
+      <option name="METHOD_NAME" value="testHashTable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest.testHashTable" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -81,7 +105,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4ac186bf-6275-4976-8307-65881acb98bb" name="Default Changelist" comment="" />
+      <changelist id="471d1b37-fa9f-46b7-97fd-ea150c002fc1" name="Default Changelist" comment="" />
       <created>1621530399615</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -100,16 +124,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/hashtable/App.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
