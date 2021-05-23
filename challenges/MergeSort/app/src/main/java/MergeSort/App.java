@@ -9,7 +9,7 @@ public class App {
 
     public static void main(String[] args) {
 MergeSort mergeSort = new MergeSort();
-int[] arr={8,4,23,42,16,15};
+int[] arr={20,18,12,8,5,-2};
 
       System.out.println(Arrays.toString(mergeSort.mergesort(arr)));
     }

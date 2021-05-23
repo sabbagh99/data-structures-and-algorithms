@@ -4,11 +4,22 @@
 package QuickSort;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import java.util.Arrays;
+
+import static org.junit.Assert.assertEquals;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
-    }
+  @Test
+  public void testQuickSort() {
+    QuickSort quickSort = new QuickSort();
+    int[] arr = {};
+
+    assertEquals("[]", Arrays.toString(quickSort.QuickSort(arr,0,arr.length-1)));
+    int[] arr1 = {8, 4, 23, 42, 16, 15};
+    assertEquals("[4, 8, 15, 16, 23, 42]", Arrays.toString(quickSort.QuickSort(arr1,0,arr1.length-1)));
+
+    int[] arr2 = {5,5,5,5,5};
+    assertEquals("[5, 5, 5, 5, 5]", Arrays.toString(quickSort.QuickSort(arr2,0,arr2.length-1)));
+  }
 }
