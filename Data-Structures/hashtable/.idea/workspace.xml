@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="471d1b37-fa9f-46b7-97fd-ea150c002fc1" name="Default Changelist" comment="" />
+    <list default="true" id="471d1b37-fa9f-46b7-97fd-ea150c002fc1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../challenges/RepeatedWord/.idea/modules/RepeatedWord.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../challenges/RepeatedWord/.idea/modules/app/RepeatedWord.app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../challenges/RepeatedWord/.idea/modules/app/RepeatedWord.app.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../challenges/RepeatedWord/.idea/modules/app/RepeatedWord.app.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashtable/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashtable/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashtable/Bucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashtable/Bucket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/hashtable/Hashtable.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/hashtable/Hashtable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/hashtable/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/hashtable/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +48,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../.." value="mergeSort" />
+        <entry key="$PROJECT_DIR$/../.." value="RepeatedWord" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -89,6 +100,7 @@
       <list>
         <item itemvalue="JUnit.AppTest.testHashTable" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -114,5 +126,19 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/test/java/hashtable/AppTest.java</url>
+          <line>11</line>
+          <properties class="hashtable.AppTest" method="testHashTable">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
