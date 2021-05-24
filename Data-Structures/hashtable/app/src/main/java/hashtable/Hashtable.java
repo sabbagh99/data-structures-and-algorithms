@@ -2,15 +2,21 @@ package hashtable;
 
 import java.util.Arrays;
 
-public class Hashtable<T> {
+public class Hashtable <T>{
 
   Bucket[] arr = new Bucket[10000];
 
   public void add(T key, T value) {
     Bucket newBucket = new Bucket(key, value);
+    Bucket temp = null;
     int idx = hash(key);
     if (arr[idx] == null) {
       arr[idx] = newBucket;
+    }
+    else {
+      temp =  arr[idx];
+      arr[idx] = newBucket;
+      arr[idx].next = temp;
     }
   }
 
@@ -19,6 +25,10 @@ public class Hashtable<T> {
     if (arr[idx] != null) {
       Bucket temp = arr[idx];
 
+      while( !temp.key.equals(key)
+        && temp.next != null ) {
+        temp = temp.next;
+      }
       return temp.value;
     }
 

@@ -16,5 +16,16 @@ public class AppTest {
     assertEquals("Bucket{key=ahmad, value=0777000000, next=null}", hashTable.arr[589].toString());  // Adding a key/value to your hashtable results in the value being in the data structure
     assertEquals("0777000000", hashTable.get("ahmad"));//Retrieving based on a key returns the value stored
     assertEquals(null, hashTable.get("ali")); // Successfully returns null for a key that does not exist in the hashtable
+
+    hashTable.add(123,"1");
+    hashTable.add(231,"2");
+    hashTable.add(321,"3");
+    assertEquals("Bucket{key=321, value=3, next=Bucket{key=231, value=2, next=Bucket{key=123, value=1, next=null}}}",hashTable.arr[762].toString()); //Successfully handle a collision within the hashtable
+    assertEquals("2",hashTable.get(231)); // Successfully retrieve a value from a bucket within the hashtable that has a collision
+    assertEquals(204,hashTable.hash("hello")); //Successfully hash a key to an in-range value
+
+
+
+
   }
 }
