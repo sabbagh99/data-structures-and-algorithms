@@ -4,11 +4,22 @@
 package TreeIntersection;
 
 import org.junit.Test;
+
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
-    }
+  @Test public void test() {
+    TreeIntersection tree1 = new TreeIntersection();
+    TreeIntersection tree2 = new TreeIntersection();
+    assertEquals(null, (tree1.commonValues(tree1.root,tree2.root)));
+    tree1.add(1);
+    tree1.add(2);
+    tree1.add(3);
+    tree2.add(2);
+    tree2.add(3);
+    assertEquals("[2, 3]", (tree1.commonValues(tree1.root,tree2.root)).toString());
+
+  }
 }
