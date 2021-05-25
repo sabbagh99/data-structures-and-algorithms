@@ -1,6 +1,7 @@
 package TreeIntersection;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class TreeIntersection<T> {
 
@@ -8,13 +9,13 @@ public class TreeIntersection<T> {
   Node root;
   Node currentRoot;
   Node parentRoot;
-  int [] valuesArr = {};
+  List valuesArr = new ArrayList();
 
 
 
 
 
-  public int[] commonValues(Node root1,Node root2){
+  public List commonValues(Node root1,Node root2){
 
     if(root1==null||root2==null)
       return null;
@@ -26,6 +27,24 @@ return valuesArr;
   }
 
 
+  public List traversal(Node root) {
+
+
+    if (root.left != null) {
+      traversal(root.left);
+    }
+    int idx = index ((T)root);
+    if(table.arr[idx]==null) {
+      table.add(root.value,root.value);
+    }else{
+
+      valuesArr.add((int)root.value);
+
+    }
+    if (root.right != null)
+      traversal(root.right);
+    return valuesArr;
+  }
 
 
 
@@ -56,24 +75,7 @@ return valuesArr;
   }
 
 
-  public int[] traversal(Node root) {
 
-
-    if (root.left != null) {
-      traversal(root.left);
-    }
-    int idx = index ((T)root);
-    if(table.arr[idx]==null) {
-    table.add(table.arr[idx],table.arr[idx]);
-    }else{
-      int i=0;
-      valuesArr[i]=(int)root.value;
-      i++;
-    }
-    if (root.right != null)
-      traversal(root.right);
-    return valuesArr;
-  }
 
   public int index (T key){
     int idx = table.hash(key);

@@ -1,6 +1,8 @@
 package TreeIntersection;
 
 
+import java.util.Arrays;
+
 public class Hashtable <T>{
 
   Bucket[] arr = new Bucket[10000];
