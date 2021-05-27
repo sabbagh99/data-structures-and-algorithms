@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/QuickSort.iml" filepath="$PROJECT_DIR$/.idea/QuickSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QuickSort.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QuickSort.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QuickSort.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QuickSort.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QuickSort.app.test.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QuickSort.app.test.iml" />
+    </modules>
+  </component>
+</project>

@@ -20,6 +20,6 @@ public class App {
     graph.addEdge(C, 6, D);
     System.out.println(graph.getNeighbors(A));
 
-
   }
+
 }
