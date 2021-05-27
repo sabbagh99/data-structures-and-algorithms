@@ -4,11 +4,28 @@
 package graph;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
-    }
+  @Test
+  public void testGraph() {
+    Graph graph = new Graph();
+
+    assertEquals(null, graph.toString());// An empty graph properly returns null
+    Node A = graph.addNode("A");
+    System.out.println("1111" + graph);
+    Node B = graph.addNode("B");
+    assertEquals("Node=a", graph.addNode("a")
+                                .toString()); //Node can be successfully added to the graph
+    assertEquals("Edge between Node=A--> Node=B, weight=5", graph.addEdge(A, 5, B)
+                                                                 .toString()); // An edge can be successfully added to the graph
+    assertEquals("[Node=A, Node=B, Node=a]", graph.getNodes()
+                                                  .toString());// A collection of all nodes can be properly retrieved from the graph
+
+    assertEquals("\n" + " A-->B, weight = 5", graph.getNeighbors(A));//All appropriate neighbors can be retrieved from the graph && // Neighbors are returned with the weight between nodes included
+    assertEquals(3, graph.size()); // The proper size is returned, representing the number of nodes in the graph
+
+
+  }
 }
