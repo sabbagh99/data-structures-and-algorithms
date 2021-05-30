@@ -1,10 +1,11 @@
-package hashtable;
+package LeftJoin;
 
 import java.util.Arrays;
 
 public class Hashtable <T>{
 
-  Bucket[] arr = new Bucket[10000];
+  int size = 10000;
+  Bucket[] arr = new Bucket[size];
 
   public void add(T key, T value) {
     Bucket newBucket = new Bucket(key, value);
@@ -21,6 +22,8 @@ public class Hashtable <T>{
   }
 
   public Object get(T key) {
+    if (key==null)
+      return null;
     int idx = hash(key);
     if (arr[idx] != null) {
       Bucket temp = arr[idx];

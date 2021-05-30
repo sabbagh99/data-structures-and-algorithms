@@ -1,4 +1,5 @@
-package hashtable;
+package TreeIntersection;
+
 
 import java.util.Arrays;
 
@@ -20,33 +21,6 @@ public class Hashtable <T>{
     }
   }
 
-  public Object get(T key) {
-    int idx = hash(key);
-    if (arr[idx] != null) {
-      Bucket temp = arr[idx];
-
-      while( !temp.key.equals(key)
-        && temp.next != null ) {
-        temp = temp.next;
-      }
-      return temp.value;
-    }
-
-    return null;
-
-  }
-
-  public boolean contains(T key) {
-    int idx = hash(key);
-    if (arr[idx] != null) {
-      Bucket temp = arr[idx];
-      if (temp.key == key)
-        return true;
-
-    }
-
-    return false;
-  }
 
   public int hash(T key) {
 

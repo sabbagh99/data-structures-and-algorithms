@@ -1,4 +1,5 @@
-package hashtable;
+package LeftJoin;
+
 public class Bucket<T> {
   T key;
   T value;
