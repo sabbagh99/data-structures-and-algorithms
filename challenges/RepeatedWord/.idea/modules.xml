@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/RepeatedWord.iml" filepath="$PROJECT_DIR$/.idea/RepeatedWord.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RepeatedWord.iml" filepath="$PROJECT_DIR$/.idea/modules/RepeatedWord.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RepeatedWord.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RepeatedWord.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RepeatedWord.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RepeatedWord.app.main.iml" />
