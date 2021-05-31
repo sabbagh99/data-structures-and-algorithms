@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/../../challenges/RepeatedWord/.idea/modules/app/RepeatedWord.app.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../challenges/RepeatedWord/.idea/modules/app/RepeatedWord.app.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../challenges/RepeatedWord/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../challenges/RepeatedWord/.idea/workspace.xml" afterDir="false" />
     </list>
+    <list default="true" id="23216513-6c2f-4654-9f30-8767194662a3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +35,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1t5L5A9qV0g9eWzAhu8geaFbNP9" />
+=======
+  <component name="ProjectId" id="1t4GFdB6IOaCFjf7xEwZoTWnavC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> d5d0f525e07b83c34d7974bb2a0599e2e1ac55ca
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,6 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
   </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -84,15 +91,26 @@
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> d5d0f525e07b83c34d7974bb2a0599e2e1ac55ca
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="f56d5a34-0428-4a9d-bf32-68c927bb1e6e" name="Default Changelist" comment="" />
       <created>1622053818094</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1622053818094</updated>
+=======
+      <changelist id="23216513-6c2f-4654-9f30-8767194662a3" name="Default Changelist" comment="" />
+      <created>1622020854499</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622020854499</updated>
+>>>>>>> d5d0f525e07b83c34d7974bb2a0599e2e1ac55ca
     </task>
     <servers />
   </component>
@@ -106,6 +124,9 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
     <option name="oldMeFiltersMigrated" value="true" />
+=======
+>>>>>>> d5d0f525e07b83c34d7974bb2a0599e2e1ac55ca
   </component>
 </project>
