@@ -5,6 +5,7 @@ package GetEdge;
 
 public class App {
     public static void main(String[] args) {
-
+      GetEdge getEdge = new GetEdge();
+      getEdge.graph();
     }
 }

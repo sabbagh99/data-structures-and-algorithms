@@ -1,5 +1,8 @@
 package GetEdge;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Graph<T> {
 
   List<Node> nodes = new ArrayList();
@@ -22,14 +25,14 @@ public class Graph<T> {
     return nodes;
   }
 
-  public String getNeighbors(Node node) {
-    String neighbors = "";
+  public List<Edge> getNeighbors(Node node) {
+    List neighbors = new ArrayList();
     for (int i = 0; i < edges.size(); i++) {
 
       if (edges.get(i).node1.value == node.value) {
-        neighbors += "\n " + edges.get(i).node1.value + "-->" + edges.get(i).node2.value + ", weight = " + edges.get(i).weight;
-      } else {
-        return null;
+        Edge newEdge = new Edge(edges.get(i).node1  , edges.get(i).weight, edges.get(i).node2);
+        neighbors.add(newEdge);
+
       }
     }
 
@@ -45,9 +48,9 @@ public class Graph<T> {
 
     for (int i = 0; i < edges.size(); i++) {
       Edge getNode1 = edges.get(i);
-      Node temp2 =  (Node)node.value;
+      Node temp2 = (Node) node.value;
 
-      Node temp1 =  getNode1.node1;
+      Node temp1 = getNode1.node1;
       if (temp1 == temp2) {
         Node temp = edges.get(i).node2;
         children.add(temp);
@@ -66,3 +69,4 @@ public class Graph<T> {
       '}';
 
   }
+}
